@@ -1,4 +1,4 @@
-﻿<xs:schema xmlns:ns1="http://www.1c.ru/SSL/Exchange/Message" xmlns:tns="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.2" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.2" attributeFormDefault="unqualified" elementFormDefault="qualified">
+<xs:schema xmlns:ns1="http://www.1c.ru/SSL/Exchange/Message" xmlns:tns="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.2" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.2" attributeFormDefault="unqualified" elementFormDefault="qualified">
 	<xs:import namespace="http://www.1c.ru/SSL/Exchange/Message"  schemaLocation="\\tsclient\Yandex\ПОЧТА\БЛАГОСОСТОЯНИЕ\EnterpriseData_1_2\ExchangeMessage.xsd"/>
 	<xs:complexType name="Info">
 		<xs:sequence>
@@ -6461,8 +6461,7 @@
 	</xs:complexType>
 	<xs:complexType name="КлючевыеСвойстваБНФОВидыСубконтоБанковские">
 		<xs:sequence>
-			<xs:element name="Код" type="xs:string" minOccurs="0"/>
-			<xs:element name="Наименование" type="xs:string" minOccurs="0"/>
+			<xs:element name="Идентификатор" type="xs:string" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
