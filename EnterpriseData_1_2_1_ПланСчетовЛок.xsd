@@ -2860,6 +2860,8 @@
 			<xs:extension base="ns1:Object">
 				<xs:sequence>
 					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваНПФБФормаНПО_СНИ1"/>
+					<xs:element name="ДатаНачала" type="xs:date" minOccurs="0"/>
+					<xs:element name="ДатаОкончания" type="xs:date" minOccurs="0"/>
 					<xs:element name="ТабличнаяЧасть" type="tns:Документ.НПФБФормаНПО_СНИ1.ТабличнаяЧасть"/>
 					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
 					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
@@ -2892,6 +2894,8 @@
 			<xs:extension base="ns1:Object">
 				<xs:sequence>
 					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваНПФБФормаНПО_СНИ2"/>
+					<xs:element name="ДатаНачала" type="xs:date" minOccurs="0"/>
+					<xs:element name="ДатаОкончания" type="xs:date" minOccurs="0"/>
 					<xs:element name="ТабличнаяЧасть" type="tns:Документ.НПФБФормаНПО_СНИ2.ТабличнаяЧасть"/>
 					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
 					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
@@ -2924,6 +2928,8 @@
 			<xs:extension base="ns1:Object">
 				<xs:sequence>
 					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваНПФБФормаНПО_СНИ3"/>
+					<xs:element name="ДатаНачала" type="xs:date" minOccurs="0"/>
+					<xs:element name="ДатаОкончания" type="xs:date" minOccurs="0"/>
 					<xs:element name="ТабличнаяЧасть" type="tns:Документ.НПФБФормаНПО_СНИ3.ТабличнаяЧасть"/>
 					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
 					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
@@ -2956,6 +2962,8 @@
 			<xs:extension base="ns1:Object">
 				<xs:sequence>
 					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваНПФБФормаНПО_СНРФЛ"/>
+					<xs:element name="ДатаНачала" type="xs:date" minOccurs="0"/>
+					<xs:element name="ДатаОкончания" type="xs:date" minOccurs="0"/>
 					<xs:element name="ТабличнаяЧасть" type="tns:Документ.НПФБФормаНПО_СНРФЛ.ТабличнаяЧасть"/>
 					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
 					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
@@ -2988,6 +2996,8 @@
 			<xs:extension base="ns1:Object">
 				<xs:sequence>
 					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваНПФБФормаНПО_СНРЮЛ"/>
+					<xs:element name="ДатаНачала" type="xs:date" minOccurs="0"/>
+					<xs:element name="ДатаОкончания" type="xs:date" minOccurs="0"/>
 					<xs:element name="ТабличнаяЧасть" type="tns:Документ.НПФБФормаНПО_СНРЮЛ.ТабличнаяЧасть"/>
 					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
 					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
@@ -3020,6 +3030,8 @@
 			<xs:extension base="ns1:Object">
 				<xs:sequence>
 					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваНПФБФормаНПО_СОУД1"/>
+					<xs:element name="ДатаНачала" type="xs:date" minOccurs="0"/>
+					<xs:element name="ДатаОкончания" type="xs:date" minOccurs="0"/>
 					<xs:element name="ТабличнаяЧасть" type="tns:Документ.НПФБФормаНПО_СОУД1.ТабличнаяЧасть"/>
 					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
 					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
@@ -3051,6 +3063,8 @@
 			<xs:extension base="ns1:Object">
 				<xs:sequence>
 					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваНПФБФормаНПО_СОУД2"/>
+					<xs:element name="ДатаНачала" type="xs:date" minOccurs="0"/>
+					<xs:element name="ДатаОкончания" type="xs:date" minOccurs="0"/>
 					<xs:element name="ТабличнаяЧасть" type="tns:Документ.НПФБФормаНПО_СОУД2.ТабличнаяЧасть"/>
 					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
 					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
@@ -3084,6 +3098,8 @@
 			<xs:extension base="ns1:Object">
 				<xs:sequence>
 					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваНПФБФормаНПО_СПВ1"/>
+					<xs:element name="ДатаНачала" type="xs:date" minOccurs="0"/>
+					<xs:element name="ДатаОкончания" type="xs:date" minOccurs="0"/>
 					<xs:element name="ТабличнаяЧасть" type="tns:Документ.НПФБФормаНПО_СПВ1.ТабличнаяЧасть"/>
 					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
 					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
