@@ -787,6 +787,8 @@
 						</xs:simpleType>
 					</xs:element>					
 					<xs:element name="СуммаНСО" type="tns:ТипСумма"/>
+					<xs:element name="БанковскийСчетКонтрагента" type="tns:КлючевыеСвойстваБанковскийСчет" minOccurs="0"/>
+					<xs:element name="Контрагент" type="tns:КлючевыеСвойстваКонтрагент" minOccurs="0"/>					
 					<xs:element name="Нарушение" type="xs:boolean" minOccurs="0"/>
 					<xs:element name="ДатаНарушения" type="xs:date" minOccurs="0"/>					
 					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
