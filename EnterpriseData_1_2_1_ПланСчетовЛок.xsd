@@ -2028,9 +2028,7 @@
 	<xs:complexType name="Документ.НПФБФормаНПО_26ФЛ.ТабличнаяЧасть.Строка">
 		<xs:sequence>
 			<xs:element name="НомерСтрокиДокумента" type="tns:ТипНомерСтроки" minOccurs="0"/>
-			<xs:element name="Вкладчик" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
 			<xs:element name="ПлатежныйДокумент" type="tns:КлючевыеСвойстваНПФББанковскиеТранзакции" minOccurs="0"/>
-			<xs:element name="ВидКлиента" type="tns:НПФБТипыВзносовНПО" minOccurs="0"/>
 			<xs:element name="СуммаПенсВзносовДанныеФонда" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:element name="СуммаПенсВзносовДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:element name="СуммаПенсВзносовРасхождения" type="tns:ТипСумма" minOccurs="0"/>
@@ -9560,7 +9558,6 @@
 					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваБНФОСчетаАналитическогоУчета"/>
 					<xs:element name="Наименование" type="xs:string" minOccurs="0"/>
 					<xs:element name="ПризнакДоверительногоУправления" type="xs:string" minOccurs="0"/>	
-					<xs:element name="ДоговорДоверительногоУправления" type="tns:КлючевыеСвойстваДоговор"/>				
 					<xs:element name="Аналитика1" type="tns:БНФОВидБухгалтерскойАналитики" minOccurs="0"/>
 					<xs:element name="Аналитика2" type="tns:БНФОВидБухгалтерскойАналитики" minOccurs="0"/>
 					<xs:element name="Аналитика3" type="tns:БНФОВидБухгалтерскойАналитики" minOccurs="0"/>
