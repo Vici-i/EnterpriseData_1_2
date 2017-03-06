@@ -1,5 +1,5 @@
 <xs:schema xmlns:ns1="http://www.1c.ru/SSL/Exchange/Message" xmlns:tns="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.2" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.2" attributeFormDefault="unqualified" elementFormDefault="qualified">
-	<xs:import namespace="http://www.1c.ru/SSL/Exchange/Message"  schemaLocation="Z:\ПОЧТА\БЛАГОСОСТОЯНИЕ\EnterpriseData_1_2\ExchangeMessage.xsd"/>
+	<xs:import namespace="http://www.1c.ru/SSL/Exchange/Message"  schemaLocation="Y:\ПОЧТА\БЛАГОСОСТОЯНИЕ\EnterpriseData_1_2\ExchangeMessage.xsd"/>
 	<xs:complexType name="Info">
 		<xs:sequence>
 			<xs:element name="Date" type="xs:date"/>
@@ -2863,12 +2863,33 @@
 			<xs:element name="Строка" type="tns:Документ.НПФБФормаНПО_ИСПА34.ТабличнаяЧасть.Строка" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="Документ.НПФБФормаНПО_ИСПА34.ТабличнаяЧасть.Строка">
+	<xs:complexType name="Документ.УдалитьНПФБФормаНПО_ИСПА34.ТабличнаяЧасть.Строка">
 		<xs:sequence>
 			<xs:element name="НомерСтрокиДокумента" type="tns:ТипНомерСтроки" minOccurs="0"/>
 			<xs:element name="РеквизитыОтчета" type="xs:string" minOccurs="0"/>
 			<xs:element name="СуммаНДФЛкУплатеРезиденты" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:element name="СуммаНДФЛкУплатеНерезиденты" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="Документ.НПФБФормаНПО_ИСПА34.ТабличнаяЧасть.Строка">
+		<xs:sequence>
+			<xs:element name="НомерСтрокиДокумента" type="tns:ТипНомерСтроки" minOccurs="0"/>
+			<xs:element name="НомерРасчетногоСчета" type="xs:string" minOccurs="0"/>
+			<xs:element name="Вкладчик" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
+			<xs:element name="ВидКлиента" type="tns:НПФБТипыВзносовНПО" minOccurs="0"/>
+			<xs:element name="ТипКлиента" type="tns:НДФЛСтавкиНалогообложенияРезидента" minOccurs="0"/>
+			<xs:element name="ТипОперации" type="xs:string" minOccurs="0"/>
+			<xs:element name="СтавкаНДФЛ" type="tns:НДФЛСтавкиНалогообложенияРезидента" minOccurs="0"/>
+			<xs:element name="ВидВыплаты" type="tns:КлючевыеСвойстваНПФБВидОперацииНПО" minOccurs="0"/>
+			<xs:element name="ДоговорНПО" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
+			<xs:element name="Сумма" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="СуммаНДФЛ" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="СуммаЗаУслугиПочтыВТЧПлатаЗаПереводИДоставка1" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="СуммаЗаУслугиПочтыВТЧПлатаЗаПереводИДоставка2" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ТипДоговора" type="tns:НПФБТипыДоговоровНПО" minOccurs="0"/>
+			<xs:element name="НомерПенсионнойСхемы" type="tns:КлючевыеСвойстваНПФБНомераПенсионныхСхем" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
