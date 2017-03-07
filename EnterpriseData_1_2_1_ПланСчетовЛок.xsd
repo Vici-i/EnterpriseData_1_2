@@ -81,6 +81,7 @@
 						<xs:element name="УстановкаЦенНоменклатурыСсылка" type="tns:КлючевыеСвойстваУстановкаЦенНоменклатуры" minOccurs="0"/>
 						<xs:element name="ФизическоеЛицоСсылка" type="tns:КлючевыеСвойстваФизическоеЛицо" minOccurs="0"/>
 						<xs:element name="ХарактеристикаНоменклатурыСсылка" type="tns:КлючевыеСвойстваХарактеристикаНоменклатуры" minOccurs="0"/>
+						<xs:element name="ЦеннаяБумагаСсылка" type="tns:КлючевыеСвойстваЦенныеБумаги" minOccurs="0"/>							
 					</xs:choice>
 				</xs:complexType>
 			</xs:element>
@@ -161,6 +162,7 @@
 						<xs:element name="УстановкаЦенНоменклатурыСсылка" type="tns:КлючевыеСвойстваУстановкаЦенНоменклатуры" minOccurs="0"/>
 						<xs:element name="ФизическоеЛицоСсылка" type="tns:КлючевыеСвойстваФизическоеЛицо" minOccurs="0"/>
 						<xs:element name="ХарактеристикаНоменклатурыСсылка" type="tns:КлючевыеСвойстваХарактеристикаНоменклатуры" minOccurs="0"/>
+						<xs:element name="ЦеннаяБумагаСсылка" type="tns:КлючевыеСвойстваЦенныеБумаги" minOccurs="0"/>					
 					</xs:choice>
 				</xs:complexType>
 			</xs:element>
