@@ -1955,11 +1955,9 @@
 			<xs:element name="Вкладчик" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
 			<xs:element name="ПлатежныйДокумент" type="tns:КлючевыеСвойстваНПФББанковскиеТранзакции" minOccurs="0"/>
 			<xs:element name="ДоговорНПО" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
-			<xs:element name="ПенсионныйВзносРуб" type="tns:ТипСумма" minOccurs="0"/>
-			<xs:element name="СуммаЗачисленныхПенсВзносовДанныеФонда" type="tns:ТипСумма" minOccurs="0"/>
-			<xs:element name="СуммаЗачисленныхПенсВзносовДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
-			<xs:element name="СуммаЗачисленныхПенсВзносовРасхождения" type="tns:ТипСумма" minOccurs="0"/>
-			<xs:element name="Сумма" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="СуммаПенсВзносовДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="СуммаЧастиПенсВзносовНаПополнениеСтрахРезерваДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="СуммаЧастиПенсВзносовНаОУДДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:element name="ТипДоговора" type="tns:НПФБТипыДоговоровНПО" minOccurs="0"/>
 			<xs:element name="НомерПенсионнойСхемы" type="tns:КлючевыеСвойстваНПФБНомераПенсионныхСхем" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
@@ -1994,15 +1992,7 @@
 			<xs:element name="ДоговорНПО" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
 			<xs:element name="ТипДоговора" type="tns:НПФБТипыДоговоровНПО" minOccurs="0"/>
 			<xs:element name="НомерПенсионнойСхемы" type="tns:КлючевыеСвойстваНПФБНомераПенсионныхСхем" minOccurs="0"/>
-			<xs:element name="СуммаПенсВзносовДанныеФонда" type="tns:ТипСумма" minOccurs="0"/>
-			<xs:element name="СуммаПенсВзносовДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
-			<xs:element name="СуммаПенсВзносовРасхождения" type="tns:ТипСумма" minOccurs="0"/>
-			<xs:element name="СуммаЧастиПенсВзносовНаПополнениеСтрахРезерваДанныеФонда" type="tns:ТипСумма" minOccurs="0"/>
-			<xs:element name="СуммаЧастиПенсВзносовНаПополнениеСтрахРезерваДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
-			<xs:element name="СуммаЧастиПенсВзносовНаПополнениеСтрахРезерваРасхождения" type="tns:ТипСумма" minOccurs="0"/>
-			<xs:element name="СуммаЧастиПенсВзносовНаОУДДанныеФонда" type="tns:ТипСумма" minOccurs="0"/>
-			<xs:element name="СуммаЧастиПенсВзносовНаОУДДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
-			<xs:element name="СуммаЧастиПенсВзносовНаОУДРасхождения" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="СуммаЗачисленныхПенсВзносовДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
@@ -2031,9 +2021,7 @@
 		<xs:sequence>
 			<xs:element name="НомерСтрокиДокумента" type="tns:ТипНомерСтроки" minOccurs="0"/>
 			<xs:element name="ПлатежныйДокумент" type="tns:КлючевыеСвойстваНПФББанковскиеТранзакции" minOccurs="0"/>
-			<xs:element name="СуммаПенсВзносовДанныеФонда" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:element name="СуммаПенсВзносовДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
-			<xs:element name="СуммаПенсВзносовРасхождения" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:element name="ТипДоговора" type="tns:НПФБТипыДоговоровНПО" minOccurs="0"/>
 			<xs:element name="НомерПенсионнойСхемы" type="tns:КлючевыеСвойстваНПФБНомераПенсионныхСхем" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
@@ -3328,9 +3316,7 @@
 			<xs:element name="ПлатежныйДокумент" type="tns:КлючевыеСвойстваНПФББанковскиеТранзакции" minOccurs="0"/>
 			<xs:element name="Вкладчик" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
 			<xs:element name="ДоговорНПО" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
-			<xs:element name="СуммаПоступившихЦелевыхПенсВзносовДанныеФонда" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:element name="СуммаПоступившихЦелевыхПенсВзносовДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
-			<xs:element name="СуммаПоступившихЦелевыхПенсВзносовРасхождения" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
@@ -3362,10 +3348,7 @@
 			<xs:element name="Вкладчик" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
 			<xs:element name="ДоговорНПО" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
 			<xs:element name="ВидКлиента" type="tns:НПФБТипыВзносовНПО" minOccurs="0"/>
-			<xs:element name="Сумма" type="tns:ТипСумма" minOccurs="0"/>
-			<xs:element name="СуммаНачисленныхЦелевыхВзносовДанныеФонда" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:element name="СуммаНачисленныхЦелевыхВзносовДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
-			<xs:element name="СуммаНачисленныхЦелевыхВзносовРасхождения" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
@@ -3396,12 +3379,8 @@
 			<xs:element name="ПлатежныйДокумент" type="tns:КлючевыеСвойстваНПФББанковскиеТранзакции" minOccurs="0"/>
 			<xs:element name="Вкладчик" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
 			<xs:element name="ДоговорНПО" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
-			<xs:element name="СуммаПоступившихИдентифицированныхПенсВзносовЮЛДанныеФонда" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:element name="СуммаПоступившихИдентифицированныхПенсВзносовЮЛДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
-			<xs:element name="СуммаПоступившихИдентифицированныхПенсВзносовЮЛРасхождения" type="tns:ТипСумма" minOccurs="0"/>
-			<xs:element name="СуммаПоступившихИдентифицированныхПенсВзносовФЛДанныеФонда" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:element name="СуммаПоступившихИдентифицированныхПенсВзносовФЛДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
-			<xs:element name="СуммаПоступившихИдентифицированныхПенсВзносовФЛРасхождения" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
