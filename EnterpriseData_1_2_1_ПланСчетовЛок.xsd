@@ -2072,7 +2072,7 @@
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
 	</xs:complexType>
-
+ 
 	<xs:complexType name="Документ.НПФБФормаНПО_СВО1">
 		<xs:complexContent>
 			<xs:extension base="ns1:Object">
@@ -2156,6 +2156,54 @@
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
 	</xs:complexType>
 	<xs:complexType name="КлючевыеСвойстваНПФБФормаНПО_СВО2">
+		<xs:sequence>
+			<xs:element name="Дата" type="xs:dateTime"/>
+			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
+			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
+			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
+			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+
+	<xs:complexType name="Документ.НПФБФормаНПО_СВО3">
+		<xs:complexContent>
+			<xs:extension base="ns1:Object">
+				<xs:sequence>
+					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваНПФБФормаНПО_СВО3"/>
+					<xs:element name="ДатаНачала" type="xs:date" minOccurs="0"/>
+					<xs:element name="ДатаОкончания" type="xs:date" minOccurs="0"/>
+					<xs:element name="ТабличнаяЧасть" type="tns:Документ.НПФБФормаНПО_СВО3.ТабличнаяЧасть"/>
+					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
+					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:anyAttribute namespace="##any" processContents="lax"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="Документ.НПФБФормаНПО_СВО3.ТабличнаяЧасть">
+		<xs:sequence>
+			<xs:element name="Строка" type="tns:Документ.НПФБФормаНПО_СВО3.ТабличнаяЧасть.Строка" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Документ.НПФБФормаНПО_СВО3.ТабличнаяЧасть.Строка">
+		<xs:sequence>
+			<xs:element name="НомерСтрокиДокумента" type="tns:ТипНомерСтроки" minOccurs="0"/>
+			<xs:element name="НаименованиеОперации" type="xs:string" minOccurs="0"/>
+ 			<xs:element name="ВидКлиента" type="tns:НПФБТипыВзносовНПО" minOccurs="0"/>
+            <xs:element name="Вкладчик" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
+            <xs:element name="ДоговорНПО" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
+			<xs:element name="СуммаПоДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="Причина" type="xs:string" minOccurs="0"/>
+			<xs:element name="ДатаВозникновения" type="xs:date" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="КлючевыеСвойстваНПФБФормаНПО_СВО3">
 		<xs:sequence>
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
