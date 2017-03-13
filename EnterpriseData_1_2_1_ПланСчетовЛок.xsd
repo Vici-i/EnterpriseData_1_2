@@ -254,12 +254,10 @@
 					<xs:element name="Ответственный" type="tns:КлючевыеСвойстваПользователь" minOccurs="0"/>
 					<xs:element name="Комментарий" type="xs:string" minOccurs="0"/>
 					<xs:element name="Описание" type="xs:string" minOccurs="0"/>					
-					<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 					<xs:element name="ДатаОткрытия" type="xs:date" minOccurs="0"/>
 					<xs:element name="ДатаЗавершения" type="xs:date" minOccurs="0"/>
-					<xs:element name="ПроцентнаяСтавка" minOccurs="0">
 					<xs:element name="БанковскийСчетКонтрагента" type="tns:КлючевыеСвойстваБанковскийСчет" minOccurs="0"/>
-					<xs:element name="Контрагент" type="tns:КлючевыеСвойстваКонтрагент" minOccurs="0"/>						
+					<xs:element name="Контрагент" type="tns:КлючевыеСвойстваКонтрагент" minOccurs="0"/>				<xs:element name="ПроцентнаяСтавка" minOccurs="0">
 						<xs:simpleType>
 							<xs:restriction base="xs:decimal">
 								<xs:totalDigits value="5"/>
