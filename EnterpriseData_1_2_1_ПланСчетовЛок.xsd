@@ -289,6 +289,20 @@
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
 	</xs:complexType>
+	<xs:simpleType name="ДокументСсылка.БНФОДокументРасчетовСКонтрагентом">
+		<xs:restriction base="ns1:Ref"/>
+	</xs:simpleType>
+	<xs:complexType name="КлючевыеСвойстваБНФОДокументРасчетовСКонтрагентом">
+		<xs:sequence>
+			<xs:element name="Ссылка" type="tns:ДокументСсылка.БНФОДокументРасчетовСКонтрагентом" minOccurs="0"/>
+			<xs:element name="Дата" type="xs:dateTime"/>
+			<xs:element name="Номер" type="tns:ТипНомерДокумента"/>
+			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+
 	<xs:complexType name="АвизоМПЗДанныеПоСФ">
 		<xs:sequence>
 			<xs:element name="Строка" type="tns:АвизоМПЗДанныеПоСФ.Строка" minOccurs="0" maxOccurs="unbounded"/>
@@ -794,6 +808,26 @@
 					<xs:element name="Контрагент" type="tns:КлючевыеСвойстваКонтрагент" minOccurs="0"/>					
 					<xs:element name="Нарушение" type="xs:boolean" minOccurs="0"/>
 					<xs:element name="ДатаНарушения" type="xs:date" minOccurs="0"/>					
+					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
+					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:anyAttribute namespace="##any" processContents="lax"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+
+	<xs:complexType name="Документ.БНФОДокументРасчетовСКонтрагентом">
+		<xs:complexContent>
+			<xs:extension base="ns1:Object">
+				<xs:sequence>
+					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваБНФОДокументРасчетовСКонтрагентом"/>
+					<xs:element name="Ответственный" type="tns:КлючевыеСвойстваПользователь" minOccurs="0"/>
+					<xs:element name="Комментарий" type="xs:string" minOccurs="0"/>
+					<xs:element name="Описание" type="xs:string" minOccurs="0"/>					
+					<xs:element name="Сумма" type="tns:ТипСумма"/>
+					<xs:element name="Контрагент" type="tns:КлючевыеСвойстваКонтрагент" minOccurs="0"/>					
+					<xs:element name="Договор" type="tns:КлючевыеСвойстваДоговор" minOccurs="0"/>			
 					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
 					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
