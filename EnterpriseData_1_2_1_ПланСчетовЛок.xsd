@@ -246,18 +246,20 @@
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
 	</xs:complexType>
+
 	<xs:complexType name="Документ.БНФОСделкаНСО">
 		<xs:complexContent>
 			<xs:extension base="ns1:Object">
 				<xs:sequence>
 					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваБНФОСделкаНСО"/>
+					<xs:element name="ПериодичностьВыплаты" type="tns:ПериодичностьНачисленияПроцентов" minOccurs="0"/>
 					<xs:element name="Ответственный" type="tns:КлючевыеСвойстваПользователь" minOccurs="0"/>
 					<xs:element name="Комментарий" type="xs:string" minOccurs="0"/>
 					<xs:element name="Описание" type="xs:string" minOccurs="0"/>					
 					<xs:element name="ДатаОткрытия" type="xs:date" minOccurs="0"/>
 					<xs:element name="ДатаЗавершения" type="xs:date" minOccurs="0"/>
 					<xs:element name="БанковскийСчетКонтрагента" type="tns:КлючевыеСвойстваБанковскийСчет" minOccurs="0"/>
-					<xs:element name="Контрагент" type="tns:КлючевыеСвойстваКонтрагент" minOccurs="0"/>				
+					<xs:element name="Договор" type="tns:КлючевыеСвойстваДоговор" minOccurs="0"/>				
 					<xs:element name="ПроцентнаяСтавка" minOccurs="0">
 						<xs:simpleType>
 							<xs:restriction base="xs:decimal">
@@ -289,6 +291,17 @@
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
 	</xs:complexType>
+	<xs:simpleType name="ПериодичностьНачисленияПроцентов">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="День"/>
+			<xs:enumeration value="Месяц"/>
+			<xs:enumeration value="Квартал"/>
+			<xs:enumeration value="Год"/>
+			<xs:enumeration value="ВКонцеСрока"/>
+			<xs:enumeration value="ЕжемесячноВДеньВклада"/>
+		</xs:restriction>
+	</xs:simpleType>
+
 	<xs:complexType name="АвизоМПЗДанныеПоСФ">
 		<xs:sequence>
 			<xs:element name="Строка" type="tns:АвизоМПЗДанныеПоСФ.Строка" minOccurs="0" maxOccurs="unbounded"/>
@@ -768,38 +781,6 @@
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
-	</xs:complexType>
-
-	<xs:complexType name="Документ.БНФОСделкаНСО">
-		<xs:complexContent>
-			<xs:extension base="ns1:Object">
-				<xs:sequence>
-					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваБНФОСделкаНСО"/>
-					<xs:element name="Ответственный" type="tns:КлючевыеСвойстваПользователь" minOccurs="0"/>
-					<xs:element name="Комментарий" type="xs:string" minOccurs="0"/>
-					<xs:element name="Описание" type="xs:string" minOccurs="0"/>					
-					<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
-					<xs:element name="ДатаОткрытия" type="xs:date" minOccurs="0"/>
-					<xs:element name="ДатаЗавершения" type="xs:date" minOccurs="0"/>
-					<xs:element name="ПроцентнаяСтавка" minOccurs="0">
-						<xs:simpleType>
-							<xs:restriction base="xs:decimal">
-								<xs:totalDigits value="5"/>
-								<xs:fractionDigits value="2"/>
-							</xs:restriction>
-						</xs:simpleType>
-					</xs:element>					
-					<xs:element name="СуммаНСО" type="tns:ТипСумма"/>
-					<xs:element name="БанковскийСчетКонтрагента" type="tns:КлючевыеСвойстваБанковскийСчет" minOccurs="0"/>
-					<xs:element name="Контрагент" type="tns:КлючевыеСвойстваКонтрагент" minOccurs="0"/>					
-					<xs:element name="Нарушение" type="xs:boolean" minOccurs="0"/>
-					<xs:element name="ДатаНарушения" type="xs:date" minOccurs="0"/>					
-					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
-					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
-				</xs:sequence>
-				<xs:anyAttribute namespace="##any" processContents="lax"/>
-			</xs:extension>
-		</xs:complexContent>
 	</xs:complexType>
 
 	<xs:complexType name="Документ.АвизоПоМПЗВходящее">
