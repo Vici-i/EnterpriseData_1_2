@@ -3523,7 +3523,7 @@
 			<xs:element name="Вкладчик" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
 			<xs:element name="ВидКлиента" type="tns:НПФБТипыВзносовНПО" minOccurs="0"/>
 			<xs:element name="КоличествоДнейНарушенияСрокаВозвратаНДФЛ" type="tns:ТипКоличество" minOccurs="0"/>
-			<xs:element name="СтавкаНДФЛ" minOccurs="0">
+			<xs:element name="СтавкаНДФЛЧисло" minOccurs="0">
 				<xs:simpleType>
 					<xs:restriction base="xs:decimal">
 						<xs:totalDigits value="5"/>
@@ -3624,14 +3624,7 @@
 			<xs:element name="НомерПенсионнойСхемы" type="tns:КлючевыеСвойстваНПФБНомераПенсионныхСхем" minOccurs="0"/>
 			<xs:element name="ВидКлиента" type="tns:НПФБТипыВзносовНПО" minOccurs="0"/>
 			<xs:element name="ТипКлиента" type="tns:НДФЛСтавкиНалогообложенияРезидента" minOccurs="0"/>
-			<xs:element name="СтавкаНДФЛ" minOccurs="0">
-				<xs:simpleType>
-					<xs:restriction base="xs:decimal">
-						<xs:totalDigits value="5"/>
-						<xs:fractionDigits value="2"/>
-					</xs:restriction>
-				</xs:simpleType>
-			</xs:element>
+			<xs:element name="СтавкаНДФЛ" type="tns:НДФЛСтавкиНалогообложенияРезидента" minOccurs="0"/>
 			<xs:element name="ДатаВыплаты" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="НомерФайла" type="xs:string" minOccurs="0"/>
 			<xs:element name="ВидВыплаты" type="tns:КлючевыеСвойстваНПФБВидОперацииНПО" minOccurs="0"/>
@@ -3668,14 +3661,7 @@
 			<xs:element name="НомерПенсионнойСхемы" type="tns:КлючевыеСвойстваНПФБНомераПенсионныхСхем" minOccurs="0"/>
 			<xs:element name="ВидКлиента" type="tns:НПФБТипыВзносовНПО" minOccurs="0"/>
 			<xs:element name="ТипКлиента" type="tns:НДФЛСтавкиНалогообложенияРезидента" minOccurs="0"/>
-			<xs:element name="СтавкаНДФЛ" minOccurs="0">
-				<xs:simpleType>
-					<xs:restriction base="xs:decimal">
-						<xs:totalDigits value="5"/>
-						<xs:fractionDigits value="2"/>
-					</xs:restriction>
-				</xs:simpleType>
-			</xs:element>
+			<xs:element name="СтавкаНДФЛ" type="tns:НДФЛСтавкиНалогообложенияРезидента" minOccurs="0"/>
 			<xs:element name="НомерФайла" type="xs:string" minOccurs="0"/>
 			<xs:element name="ВидВыплаты" type="tns:КлючевыеСвойстваНПФБВидОперацииНПО" minOccurs="0"/>
 			<xs:element name="ДоговорНПО" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
