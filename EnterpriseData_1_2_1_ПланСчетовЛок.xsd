@@ -276,6 +276,7 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+
 	<xs:simpleType name="ДокументСсылка.БНФОСделкаНСО">
 		<xs:restriction base="ns1:Ref"/>
 	</xs:simpleType>
@@ -288,6 +289,25 @@
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+
+	<xs:complexType name="Документ.БНФОДокументРасчетовСКонтрагентом">
+		<xs:complexContent>
+			<xs:extension base="ns1:Object">
+				<xs:sequence>
+					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваБНФОДокументРасчетовСКонтрагентом"/>
+					<xs:element name="Ответственный" type="tns:КлючевыеСвойстваПользователь" minOccurs="0"/>
+					<xs:element name="Комментарий" type="xs:string" minOccurs="0"/>
+					<xs:element name="Описание" type="xs:string" minOccurs="0"/>					
+					<xs:element name="Сумма" type="tns:ТипСумма"/>
+					<xs:element name="Контрагент" type="tns:КлючевыеСвойстваКонтрагент" minOccurs="0"/>					
+					<xs:element name="Договор" type="tns:КлючевыеСвойстваДоговор" minOccurs="0"/>			
+					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
+					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:anyAttribute namespace="##any" processContents="lax"/>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 	<xs:simpleType name="ДокументСсылка.БНФОДокументРасчетовСКонтрагентом">
 		<xs:restriction base="ns1:Ref"/>
@@ -783,59 +803,6 @@
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
 	</xs:complexType>
-
-	<xs:complexType name="Документ.БНФОСделкаНСО">
-		<xs:complexContent>
-			<xs:extension base="ns1:Object">
-				<xs:sequence>
-					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваБНФОСделкаНСО"/>
-					<xs:element name="Ответственный" type="tns:КлючевыеСвойстваПользователь" minOccurs="0"/>
-					<xs:element name="Комментарий" type="xs:string" minOccurs="0"/>
-					<xs:element name="Описание" type="xs:string" minOccurs="0"/>					
-					<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
-					<xs:element name="ДатаОткрытия" type="xs:date" minOccurs="0"/>
-					<xs:element name="ДатаЗавершения" type="xs:date" minOccurs="0"/>
-					<xs:element name="ПроцентнаяСтавка" minOccurs="0">
-						<xs:simpleType>
-							<xs:restriction base="xs:decimal">
-								<xs:totalDigits value="5"/>
-								<xs:fractionDigits value="2"/>
-							</xs:restriction>
-						</xs:simpleType>
-					</xs:element>					
-					<xs:element name="СуммаНСО" type="tns:ТипСумма"/>
-					<xs:element name="БанковскийСчетКонтрагента" type="tns:КлючевыеСвойстваБанковскийСчет" minOccurs="0"/>
-					<xs:element name="Контрагент" type="tns:КлючевыеСвойстваКонтрагент" minOccurs="0"/>					
-					<xs:element name="Нарушение" type="xs:boolean" minOccurs="0"/>
-					<xs:element name="ДатаНарушения" type="xs:date" minOccurs="0"/>					
-					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
-					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
-				</xs:sequence>
-				<xs:anyAttribute namespace="##any" processContents="lax"/>
-			</xs:extension>
-		</xs:complexContent>
-	</xs:complexType>
-
-
-	<xs:complexType name="Документ.БНФОДокументРасчетовСКонтрагентом">
-		<xs:complexContent>
-			<xs:extension base="ns1:Object">
-				<xs:sequence>
-					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваБНФОДокументРасчетовСКонтрагентом"/>
-					<xs:element name="Ответственный" type="tns:КлючевыеСвойстваПользователь" minOccurs="0"/>
-					<xs:element name="Комментарий" type="xs:string" minOccurs="0"/>
-					<xs:element name="Описание" type="xs:string" minOccurs="0"/>					
-					<xs:element name="Сумма" type="tns:ТипСумма"/>
-					<xs:element name="Контрагент" type="tns:КлючевыеСвойстваКонтрагент" minOccurs="0"/>					
-					<xs:element name="Договор" type="tns:КлючевыеСвойстваДоговор" minOccurs="0"/>			
-					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
-					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
-				</xs:sequence>
-				<xs:anyAttribute namespace="##any" processContents="lax"/>
-			</xs:extension>
-		</xs:complexContent>
-	</xs:complexType>
-
 	<xs:complexType name="Документ.АвизоПоМПЗВходящее">
 		<xs:complexContent>
 			<xs:extension base="ns1:Object">
@@ -8888,6 +8855,7 @@
 			<xs:enumeration value="3"/>
 			<xs:enumeration value="Сумма ПВ Участника-Вкладчика"/>
 			<xs:enumeration value="Сумма ПВ Вкладчика"/>
+			<xs:enumeration value="Сумма ПВ ФЛ"/>			
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="НПФБТипыДоговоровНПО">
