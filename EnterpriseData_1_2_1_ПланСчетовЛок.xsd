@@ -244,6 +244,8 @@
 			<xs:element name="ВидСубконтоКт1" type="tns:КлючевыеСвойстваБНФОВидыСубконтоБанковские" minOccurs="0"/>
 			<xs:element name="ВидСубконтоКт2" type="tns:КлючевыеСвойстваБНФОВидыСубконтоБанковские" minOccurs="0"/>
 			<xs:element name="ВидСубконтоКт3" type="tns:КлючевыеСвойстваБНФОВидыСубконтоБанковские" minOccurs="0"/>
+			<xs:element name="СимволОФРДт" type="xs:string" minOccurs="0"/>
+			<xs:element name="СимволОФРКт" type="xs:string" minOccurs="0"/>			
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
@@ -255,6 +257,7 @@
 				<xs:sequence>
 					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваБНФОСделкаНСО"/>
 					<xs:element name="ПериодичностьВыплаты" type="tns:ПериодичностьНачисленияПроцентов" minOccurs="0"/>
+					<xs:element name="ВидДеятельностиНПФ" type="tns:БНФОВидыДеятельностиНПФ" minOccurs="0"/>					
 					<xs:element name="Ответственный" type="tns:КлючевыеСвойстваПользователь" minOccurs="0"/>
 					<xs:element name="Комментарий" type="xs:string" minOccurs="0"/>
 					<xs:element name="Описание" type="xs:string" minOccurs="0"/>					
@@ -8918,6 +8921,20 @@
 			<xs:enumeration value="НалоговыйАгентПоНДС"/>
 		</xs:restriction>
 	</xs:simpleType>
+	<xs:simpleType name="БНФОВидыДеятельностиНПФ">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="1"/>
+			<xs:enumeration value="2"/>
+			<xs:enumeration value="3"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="БНФОПризнакиДоверительногоУправления">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="0"/>
+			<xs:enumeration value="1"/>
+			<xs:enumeration value="2"/>
+		</xs:restriction>
+	</xs:simpleType>	
 	<xs:complexType name="ОбщиеСвойстваАмортизацияНМА">
 		<xs:sequence>
 			<xs:element name="НачислятьАмортизациюБУ" type="xs:boolean" minOccurs="0"/>
@@ -9840,7 +9857,7 @@
 				<xs:sequence>
 					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваБНФОСчетаАналитическогоУчета"/>
 					<xs:element name="Наименование" type="xs:string" minOccurs="0"/>
-					<xs:element name="ПризнакДоверительногоУправления" type="xs:string" minOccurs="0"/>	
+					<xs:element name="ПризнакДоверительногоУправления" type="tns::string" minOccurs="0"/>
 					<xs:element name="Аналитика1" type="tns:БНФОВидБухгалтерскойАналитики" minOccurs="0"/>
 					<xs:element name="Аналитика2" type="tns:БНФОВидБухгалтерскойАналитики" minOccurs="0"/>
 					<xs:element name="Аналитика3" type="tns:БНФОВидБухгалтерскойАналитики" minOccurs="0"/>
