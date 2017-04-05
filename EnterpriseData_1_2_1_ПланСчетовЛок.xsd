@@ -1,5 +1,5 @@
 <xs:schema xmlns:ns1="http://www.1c.ru/SSL/Exchange/Message" xmlns:tns="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.2" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.2" attributeFormDefault="unqualified" elementFormDefault="qualified">
-	<xs:import namespace="http://www.1c.ru/SSL/Exchange/Message"  schemaLocation="C:\dt\workspace\EnterpriseData_1_2\ExchangeMessage.xsd"/>
+	<xs:import namespace="http://www.1c.ru/SSL/Exchange/Message"  schemaLocation="Y:\ПОЧТА\БЛАГОСОСТОЯНИЕ\EnterpriseData_1_2\ExchangeMessage.xsd"/>
 	<xs:complexType name="Info">
 		<xs:sequence>
 			<xs:element name="Date" type="xs:date"/>
@@ -818,24 +818,6 @@
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
-	</xs:complexType>
-	<xs:complexType name="Документ.БНФОДокументРасчетовСКонтрагентом">
-		<xs:complexContent>
-			<xs:extension base="ns1:Object">
-				<xs:sequence>
-					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваБНФОДокументРасчетовСКонтрагентом"/>
-					<xs:element name="Ответственный" type="tns:КлючевыеСвойстваПользователь" minOccurs="0"/>
-					<xs:element name="Комментарий" type="xs:string" minOccurs="0"/>
-					<xs:element name="Описание" type="xs:string" minOccurs="0"/>					
-					<xs:element name="Сумма" type="tns:ТипСумма"/>
-					<xs:element name="Контрагент" type="tns:КлючевыеСвойстваКонтрагент" minOccurs="0"/>					
-					<xs:element name="Договор" type="tns:КлючевыеСвойстваДоговор" minOccurs="0"/>			
-					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
-					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
-				</xs:sequence>
-				<xs:anyAttribute namespace="##any" processContents="lax"/>
-			</xs:extension>
-		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="Документ.АвизоПоМПЗВходящее">
 		<xs:complexContent>
@@ -9857,7 +9839,7 @@
 				<xs:sequence>
 					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваБНФОСчетаАналитическогоУчета"/>
 					<xs:element name="Наименование" type="xs:string" minOccurs="0"/>
-					<xs:element name="ПризнакДоверительногоУправления" type="tns::string" minOccurs="0"/>
+					<xs:element name="ПризнакДоверительногоУправления" type="xs:string" minOccurs="0"/>
 					<xs:element name="Аналитика1" type="tns:БНФОВидБухгалтерскойАналитики" minOccurs="0"/>
 					<xs:element name="Аналитика2" type="tns:БНФОВидБухгалтерскойАналитики" minOccurs="0"/>
 					<xs:element name="Аналитика3" type="tns:БНФОВидБухгалтерскойАналитики" minOccurs="0"/>
