@@ -251,6 +251,31 @@
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
 	</xs:complexType>
 
+	<xs:simpleType name="СправочникСсылка.БНФОСимволыОФР">
+		<xs:restriction base="ns1:Ref"/>
+	</xs:simpleType>
+	<xs:complexType name="Справочник.БНФОСимволыОФР">
+		<xs:complexContent>
+			<xs:extension base="ns1:Object">
+				<xs:sequence>
+					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваБНФОСимволыОФР"/>
+					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
+					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:anyAttribute namespace="##any" processContents="lax"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="КлючевыеСвойстваБНФОСимволыОФР">
+		<xs:sequence>
+			<xs:element name="Ссылка" type="tns:СправочникСсылка.БНФОСимволыОФР" minOccurs="0"/>
+			<xs:element name="СимволОФР" type="xs:string" minOccurs="1"/>			
+			<xs:element name="Наименование" type="xs:string"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+
 	<xs:complexType name="Документ.БНФОСделкаНСО">
 		<xs:complexContent>
 			<xs:extension base="ns1:Object">
@@ -2480,6 +2505,8 @@
 			<xs:element name="СуммаНДФЛ" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:element name="СуммаЗаУслугиПочтыВТЧПлатаЗаПереводИДоставка1" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:element name="СуммаЗаУслугиПочтыВТЧПлатаЗаПереводИДоставка2" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="СуммаЗаУслугиПочтыВТЧПлатаЗаПереводИДоставка3" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="СуммаЗаУслугиПочтыВТЧПлатаЗаПереводИДоставка4" type="tns:ТипСумма" minOccurs="0"/>			
 			<xs:element name="ТипДоговора" type="tns:НПФБТипыДоговоровНПО" minOccurs="0"/>
 			<xs:element name="НомерПенсионнойСхемы" type="tns:КлючевыеСвойстваНПФБНомераПенсионныхСхем" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
