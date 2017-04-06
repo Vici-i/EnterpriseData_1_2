@@ -9869,6 +9869,7 @@
 					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваБНФОСчетаАналитическогоУчета"/>
 					<xs:element name="Наименование" type="xs:string" minOccurs="0"/>
 					<xs:element name="ПризнакДоверительногоУправления" type="xs:string" minOccurs="0"/>
+					<xs:element name="НПФБКодДУ" type="xs:string" minOccurs="0"/>					
 					<xs:element name="Аналитика1" type="tns:БНФОВидБухгалтерскойАналитики" minOccurs="0"/>
 					<xs:element name="Аналитика2" type="tns:БНФОВидБухгалтерскойАналитики" minOccurs="0"/>
 					<xs:element name="Аналитика3" type="tns:БНФОВидБухгалтерскойАналитики" minOccurs="0"/>
