@@ -7481,7 +7481,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:string" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
