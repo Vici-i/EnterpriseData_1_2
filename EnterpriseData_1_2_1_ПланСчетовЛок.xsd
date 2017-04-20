@@ -1,5 +1,5 @@
 <xs:schema xmlns:ns1="http://www.1c.ru/SSL/Exchange/Message" xmlns:tns="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.2" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.2" attributeFormDefault="unqualified" elementFormDefault="qualified">
-	<xs:import namespace="http://www.1c.ru/SSL/Exchange/Message"  schemaLocation="Y:\ПОЧТА\БЛАГОСОСТОЯНИЕ\EnterpriseData_1_2\ExchangeMessage.xsd"/>
+	<xs:import namespace="http://www.1c.ru/SSL/Exchange/Message"  schemaLocation="C:\dt\workspace\EnterpriseData_1_2\ExchangeMessage.xsd"/>
 	<xs:complexType name="Info">
 		<xs:sequence>
 			<xs:element name="Date" type="xs:date"/>
@@ -397,6 +397,18 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+
+	<xs:simpleType name="БНФОТипыКонтрагентов">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ИностранноеГосударство"/>
+			<xs:enumeration value="КредитныеОрганизацииИБанкиНерезиденты"/>
+			<xs:enumeration value="НекредитныеФинансовыеОрганизации"/>
+			<xs:enumeration value="НефинансовыеОрганизации"/>
+			<xs:enumeration value="ПравительствоРоссийскойФедерации"/>
+			<xs:enumeration value="СубъектРоссийскойФедерацииИлиОрганМестногоСамоуправления"/>
+		</xs:restriction>
+	</xs:simpleType>
+
 	<xs:simpleType name="АмортизационныеГруппы">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="Первая"/>
@@ -412,6 +424,7 @@
 			<xs:enumeration value="Отдельная"/>
 		</xs:restriction>
 	</xs:simpleType>
+
 	<xs:simpleType name="БНФОВидыЦеннойБумаги">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="Векселя"/>
@@ -10684,10 +10697,13 @@
 					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваЦенныеБумаги"/>
 					<xs:element name="ISIN" type="xs:string" minOccurs="0"/>
 					<xs:element name="ВидЦеннойБумаги" type="tns:БНФОВидыЦеннойБумаги" minOccurs="0"/>
+					<xs:element name="Эминтент" type="tns:КлючевыеСвойстваКонтрагент"/>					
 					<xs:element name="ФинансовыйИнструмент" minOccurs="0">
 						<xs:complexType>
 							<xs:choice>
-								<xs:element name="ПоступлениеТоваровУслугСсылка" type="tns:КлючевыеСвойстваПоступлениеТоваровУслуг" minOccurs="0"/>
+								<xs:element name="БНФОАкцииСсылка" type="tns:КлючевыеСвойстваБНФОАкции" minOccurs="0"/>
+								<xs:element name="БНФООблигацииСсылка" type="tns:КлючевыеСвойстваБНФООблигации" minOccurs="0"/>
+								<xs:element name="БНФОПроизводныеФинансовыеИнструментыСсылка" type="tns:КлючевыеСвойстваБНФОПроизводныеФинансовыеИнструментыСсылка" minOccurs="0"/>	
 							</xs:choice>
 						</xs:complexType>
 					</xs:element>
