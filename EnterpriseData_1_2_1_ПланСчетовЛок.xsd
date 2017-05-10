@@ -2976,6 +2976,7 @@
 			<xs:element name="РаспоряжениеПриказФондаРешениеНомер" type="xs:string" minOccurs="0"/>
 			<xs:element name="РаспоряжениеПриказФондаРешениеДата" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="СуммаНаправленнаяВРезервПокрытияПенсионныхОбязательствИзСтраховогоРезерва" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="СуммаКорректировкиСтраховогоРезерваНаСуммуИспользованногоСтраховогоРезерва" type="tns:ТипСумма" minOccurs="0"/>			
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
