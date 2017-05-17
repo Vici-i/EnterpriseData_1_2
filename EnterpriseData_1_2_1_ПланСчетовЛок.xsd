@@ -6797,6 +6797,13 @@
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
 	</xs:complexType>
+	<xs:complexType name="КлючевыеСвойстваБНФОВидыЦенныхБумаг">
+		<xs:sequence>
+			<xs:element name="Идентификатор" type="xs:string" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
 
 	<xs:complexType name="КлючевыеСвойстваБНФОВидыАналитикСчетов">
 		<xs:sequence>
@@ -9943,7 +9950,19 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
-
+	<xs:complexType name="Справочник.БНФОВидыЦенныхБумаг">
+		<xs:complexContent>
+			<xs:extension base="ns1:Object">
+				<xs:sequence>
+					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваБНФОВидыЦенныхБумаг"/>
+					<xs:element name="Идентификатор" type="xs:string" minOccurs="0"/>
+					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
+					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:anyAttribute namespace="##any" processContents="lax"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="Справочник.БНФОВидыАналитикСчета">
 		<xs:complexContent>
 			<xs:extension base="ns1:Object">
