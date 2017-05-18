@@ -1,5 +1,5 @@
 <xs:schema xmlns:ns1="http://www.1c.ru/SSL/Exchange/Message" xmlns:tns="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.2" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.2" attributeFormDefault="unqualified" elementFormDefault="qualified">
-	<xs:import namespace="http://www.1c.ru/SSL/Exchange/Message"  schemaLocation="C:\dt\workspace\EnterpriseData_1_2\ExchangeMessage.xsd"/>
+	<xs:import namespace="http://www.1c.ru/SSL/Exchange/Message"  schemaLocation="Y:\ПОЧТА\БЛАГОСОСТОЯНИЕ\EnterpriseData_1_2\ExchangeMessage.xsd"/>
 	<xs:complexType name="Info">
 		<xs:sequence>
 			<xs:element name="Date" type="xs:date"/>
@@ -6799,12 +6799,14 @@
 	</xs:complexType>
 	<xs:complexType name="КлючевыеСвойстваБНФОВидыЦенныхБумаг">
 		<xs:sequence>
+			<xs:element name="Ссылка" type="tns:СправочникСсылка.БНФОВидыЦенныхБумаг" minOccurs="0"/>
+			<xs:element name="Код" type="xs:string" minOccurs="0"/>
+			<xs:element name="Наименование" type="xs:string" minOccurs="0"/>
 			<xs:element name="Идентификатор" type="xs:string" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
 	</xs:complexType>
-
 	<xs:complexType name="КлючевыеСвойстваБНФОВидыАналитикСчетов">
 		<xs:sequence>
 			<xs:element name="Идентификатор" type="xs:string" minOccurs="0"/>
@@ -6812,7 +6814,6 @@
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
 	</xs:complexType>
-
 	<xs:complexType name="КлючевыеСвойстваБанк">
 		<xs:sequence>
 			<xs:element name="Ссылка" type="tns:СправочникСсылка.Банки" minOccurs="0"/>
@@ -9955,7 +9956,6 @@
 			<xs:extension base="ns1:Object">
 				<xs:sequence>
 					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваБНФОВидыЦенныхБумаг"/>
-					<xs:element name="Идентификатор" type="xs:string" minOccurs="0"/>
 					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
 					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
@@ -10746,6 +10746,9 @@
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
 	</xs:complexType>
 	<xs:simpleType name="СправочникСсылка.БНФОАкции">
+		<xs:restriction base="ns1:Ref"/>
+	</xs:simpleType>
+	<xs:simpleType name="СправочникСсылка.БНФОВидыЦенныхБумаг">
 		<xs:restriction base="ns1:Ref"/>
 	</xs:simpleType>
 	<xs:simpleType name="СправочникСсылка.БНФОБиржи">
