@@ -10454,6 +10454,32 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
+		<xs:simpleType name="СправочникСсылка.БНФОВидыПотоковДенежныхСредств">
+		<xs:restriction base="ns1:Ref"/>
+	</xs:simpleType>
+	<xs:complexType name="Справочник.БНФОВидыПотоковДенежныхСредств">
+		<xs:complexContent>
+			<xs:extension base="ns1:Object">
+				<xs:sequence>
+					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваБНФОВидыПотоковДенежныхСредств"/>
+					<xs:element name="ВидДеятельностиНФО" type="tns:БНФОВидыДеятельностиНФО"/>
+					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
+					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:anyAttribute namespace="##any" processContents="lax"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="КлючевыеСвойстваБНФОВидыПотоковДенежныхСредств">
+		<xs:sequence>
+			<xs:element name="Ссылка" type="tns:СправочникСсылка.БНФОВидыПотоковДенежныхСредств" minOccurs="0"/>
+			<xs:element name="Код" type="xs:string" minOccurs="0"/>
+			<xs:element name="Наименование" type="xs:string" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	</xs:complexType>
 		<xs:simpleType name="СправочникСсылка.СтатьиДДСГруппа">
 		<xs:restriction base="ns1:Ref"/>
 	</xs:simpleType>
@@ -10478,7 +10504,7 @@
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
 	</xs:complexType>
-<xs:complexType name="Справочник.СтатьиДоходов">
+	<xs:complexType name="Справочник.СтатьиДоходов">
 		<xs:complexContent>
 			<xs:extension base="ns1:Object">
 				<xs:sequence>
