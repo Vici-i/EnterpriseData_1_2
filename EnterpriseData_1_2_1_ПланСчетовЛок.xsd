@@ -8,7 +8,7 @@
 	</xs:complexType>
 	<xs:complexType name="БНФОВидБухгалтерскойАналитики">
 		<xs:sequence>
-			<xs:element name="Ссылка" minOccurs="0">
+			<xs:element name="Ссылка" nillable="true" minOccurs="0">
 				<xs:complexType>
 					<xs:choice>
 						<xs:element name="АвансовыйОтчетСсылка" type="tns:КлючевыеСвойстваАвансовыйОтчет" minOccurs="0"/>
@@ -90,7 +90,7 @@
 	</xs:complexType>
 	<xs:complexType name="БНФОВидАналитикиСчетов">
 		<xs:sequence>
-			<xs:element name="Ссылка" minOccurs="0">
+			<xs:element name="Ссылка" nillable="true" minOccurs="0">
 				<xs:complexType>
 					<xs:choice>
 						<xs:element name="АвансовыйОтчетСсылка" type="tns:КлючевыеСвойстваАвансовыйОтчет" minOccurs="0"/>
@@ -330,7 +330,7 @@
 					<xs:element name="Ответственный" type="tns:КлючевыеСвойстваПользователь" minOccurs="0"/>
 					<xs:element name="Комментарий" type="xs:string" minOccurs="0"/>
 					<xs:element name="Описание" type="xs:string" minOccurs="0"/>					
-					<xs:element name="Сумма" type="tns:ТипСумма"/>
+					<xs:element name="Сумма" type="tns:ТипСумма" nillable="true" minOccurs="0"/>
 					<xs:element name="Контрагент" type="tns:КлючевыеСвойстваКонтрагент" minOccurs="0"/>					
 					<xs:element name="Договор" type="tns:КлючевыеСвойстваДоговор" minOccurs="0"/>			
 					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
@@ -9953,7 +9953,7 @@
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
-	<xs:complexType name="Справочник.БНФОВидыЦенныхБумаг">
+	<xs:complexType name="Справочник.БНФОВидыЦенныхБумаг"> 
 		<xs:complexContent>
 			<xs:extension base="ns1:Object">
 				<xs:sequence>
