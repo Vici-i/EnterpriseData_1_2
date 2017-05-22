@@ -8965,6 +8965,27 @@
 			<xs:enumeration value="3"/>
 		</xs:restriction>
 	</xs:simpleType>
+	<xs:simpleType name="БНФОВидыДеятельностиНФО">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ПрофессиональныеУчастникиРынкаЦенныхБумаг"/>
+			<xs:enumeration value="УправляющиеКомпанийФондов"/>
+			<xs:enumeration value="СпециализированныеДепозитарииФондов"/>
+			<xs:enumeration value="АкционерныеИнвестиционныеФонды"/>
+			<xs:enumeration value="КлиринговаяДеятельность"/>
+			<xs:enumeration value="ДеятельностьПоОсуществлениюФункцийЦентральногоКонтрагента"/>
+			<xs:enumeration value="ДеятельностьОрганизатораТорговли"/>
+			<xs:enumeration value="ДеятельностьЦентральногоДепозитария"/>
+			<xs:enumeration value="ДеятельностьСубъектовСтраховогоДела"/>
+			<xs:enumeration value="НегосударственныеПенсионныеФонды"/>
+			<xs:enumeration value="МикрофинансовыеОрганизации"/>
+			<xs:enumeration value="КредитныеПотребительскиеКооперативы"/>
+			<xs:enumeration value="ЖилищныеНакопительныеКооперативы"/>
+			<xs:enumeration value="БюроКредитныхИсторий"/>
+			<xs:enumeration value="АктуарнаяДеятельность"/>
+			<xs:enumeration value="РейтинговыеАгентства"/>
+			<xs:enumeration value="СельскохозяйственныеКредитныеПотребительскиеКооперативы"/>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:simpleType name="БНФОПризнакиДоверительногоУправления">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="0"/>
@@ -10426,13 +10447,38 @@
 				<xs:sequence>
 					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваСтатьяДДС"/>
 					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
+					<xs:element name="Группа" type="tns:КлючевыеСвойстваСтатьиДДСГруппа" minOccurs="0"/>
 					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
 				<xs:anyAttribute namespace="##any" processContents="lax"/>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
-	<xs:complexType name="Справочник.СтатьиДоходов">
+		<xs:simpleType name="СправочникСсылка.СтатьиДДСГруппа">
+		<xs:restriction base="ns1:Ref"/>
+	</xs:simpleType>
+	<xs:complexType name="Справочник.СтатьиДДСГруппа">
+		<xs:complexContent>
+			<xs:extension base="ns1:Object">
+				<xs:sequence>
+					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваСтатьиДДСГруппа"/>
+					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:anyAttribute namespace="##any" processContents="lax"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="КлючевыеСвойстваСтатьиДДСГруппа">
+		<xs:sequence>
+			<xs:element name="Ссылка" type="tns:СправочникСсылка.СтатьиДДСГруппа" minOccurs="0"/>
+			<xs:element name="Наименование" type="xs:string"/>
+			<xs:element name="Группа" type="tns:КлючевыеСвойстваСтатьиДДСГруппа" minOccurs="0"/>
+			<xs:element name="КодВПрограмме" type="xs:string" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+<xs:complexType name="Справочник.СтатьиДоходов">
 		<xs:complexContent>
 			<xs:extension base="ns1:Object">
 				<xs:sequence>
