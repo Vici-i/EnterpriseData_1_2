@@ -6783,6 +6783,7 @@
 	</xs:complexType>
 	<xs:complexType name="КлючевыеСвойстваБНФОСчетаАналитическогоУчета">
 		<xs:sequence>
+			<xs:element name="Ссылка" type="tns:СправочникСсылка.БНФОСчетаАналитическогоУчета" minOccurs="0"/>
 			<xs:element name="Код" type="xs:string" minOccurs="0"/>
 			<xs:element name="Валюта" type="tns:КлючевыеСвойстваВалюта"/>	
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>			
@@ -10820,6 +10821,9 @@
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
 	</xs:complexType>
 	<xs:simpleType name="СправочникСсылка.БНФОАкции">
+		<xs:restriction base="ns1:Ref"/>
+	</xs:simpleType>
+	<xs:simpleType name="СправочникСсылка.БНФОСчетаАналитическогоУчета">
 		<xs:restriction base="ns1:Ref"/>
 	</xs:simpleType>
 	<xs:simpleType name="СправочникСсылка.БНФОВидыЦенныхБумаг">
