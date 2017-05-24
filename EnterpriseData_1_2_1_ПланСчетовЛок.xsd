@@ -10529,8 +10529,7 @@
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
 	</xs:complexType>
-	</xs:complexType>
-		<xs:simpleType name="СправочникСсылка.СтатьиДДСГруппа">
+	<xs:simpleType name="СправочникСсылка.СтатьиДДСГруппа">
 		<xs:restriction base="ns1:Ref"/>
 	</xs:simpleType>
 	<xs:complexType name="Справочник.СтатьиДДСГруппа">
