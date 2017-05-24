@@ -10458,6 +10458,7 @@
 				<xs:sequence>
 					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваСтатьяДДС"/>
 					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
+					<xs:element name="БНФОВидПотоковДенежныхСредств" type="tns:КлючевыеСвойстваБНФОВидыПотоковДенежныхСредств"/>
 					<xs:element name="Группа" type="tns:КлючевыеСвойстваСтатьиДДСГруппа" minOccurs="0"/>
 					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
