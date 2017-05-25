@@ -10841,7 +10841,7 @@
 					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваЦенныеБумаги"/>
 					<xs:element name="ISIN" type="xs:string" minOccurs="0"/>
 					<xs:element name="ВидЦеннойБумаги" type="tns:БНФОВидыЦеннойБумаги" minOccurs="0"/>
-					<xs:element name="Эминтент" type="tns:КлючевыеСвойстваКонтрагент"/>					
+					<xs:element name="Эминтент" type="tns:КлючевыеСвойстваКонтрагент" minOccurs="0"/>					
 					<xs:element name="ФинансовыйИнструмент" minOccurs="0">
 						<xs:complexType>
 							<xs:choice>
