@@ -2445,6 +2445,7 @@
 		<xs:sequence>
 			<xs:element name="НомерСтрокиДокумента" type="tns:ТипНомерСтроки" minOccurs="0"/>
 			<xs:element name="НаименованиеОперации" type="xs:string" minOccurs="0"/>
+
 			<xs:element name="ДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
@@ -2584,7 +2585,6 @@
 	<xs:complexType name="Документ.НПФБФормаНПО_АНДФЛ_ФЛ.ТабличнаяЧасть.Строка">
 		<xs:sequence>
 			<xs:element name="НомерСтрокиДокумента" type="tns:ТипНомерСтроки" minOccurs="0"/>
-			<xs:element name="ТипКлиента" type="tns:НДФЛСтавкиНалогообложенияРезидента" minOccurs="0"/>
 			<xs:element name="СуммаУдержанногоНДФЛДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
