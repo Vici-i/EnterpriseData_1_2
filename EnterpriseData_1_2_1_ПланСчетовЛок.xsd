@@ -358,7 +358,7 @@
 			<xs:element name="Ссылка" type="tns:ДокументСсылка.БНФОДокументРасчетовСКонтрагентом" minOccurs="0"/>
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Номер" type="tns:ТипНомерДокумента"/>
-			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
+			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
