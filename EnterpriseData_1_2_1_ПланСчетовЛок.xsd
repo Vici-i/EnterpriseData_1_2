@@ -6785,8 +6785,8 @@
 		<xs:sequence>
 			<xs:element name="Ссылка" type="tns:СправочникСсылка.БНФОСчетаАналитическогоУчета" minOccurs="0"/>
 			<xs:element name="Код" type="xs:string" minOccurs="0"/>
-			<xs:element name="Валюта" type="tns:КлючевыеСвойстваВалюта"/>	
-			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>			
+			<xs:element name="Валюта" type="tns:КлючевыеСвойстваВалюта" minOccurs="0"/>	
+			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация" minOccurs="0"/>			
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
