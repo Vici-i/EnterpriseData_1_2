@@ -1,5 +1,5 @@
 <xs:schema xmlns:ns1="http://www.1c.ru/SSL/Exchange/Message" xmlns:tns="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.2" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.2" attributeFormDefault="unqualified" elementFormDefault="qualified">
-	<xs:import namespace="http://www.1c.ru/SSL/Exchange/Message"  schemaLocation="Y:\ПОЧТА\БЛАГОСОСТОЯНИЕ\EnterpriseData_1_2\ExchangeMessage.xsd"/>
+	<xs:import namespace="http://www.1c.ru/SSL/Exchange/Message"  schemaLocation="c:\Temp\ed\ExchangeMessage.xsd"/>
 	<xs:complexType name="Info">
 		<xs:sequence>
 			<xs:element name="Date" type="xs:date"/>
@@ -3360,6 +3360,36 @@
 			<xs:element name="ДоговорНПО" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
 			<xs:element name="ВидКлиента" type="tns:НПФБТипыВзносовНПО" minOccurs="0"/>
 			<xs:element name="СуммаНеразнесенныхПенсВзносовДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="Документ.НПФБФормаНПО_СНРСвод">
+		<xs:complexContent>
+			<xs:extension base="ns1:Object">
+				<xs:sequence>
+					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваНПФБФормаНПО_СНРСвод"/>
+					<xs:element name="ДатаНачала" type="xs:date" minOccurs="0"/>
+					<xs:element name="ДатаОкончания" type="xs:date" minOccurs="0"/>
+					<xs:element name="ТабличнаяЧасть" type="tns:Документ.НПФБФормаНПО_СНРСвод.ТабличнаяЧасть"/>
+					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
+					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:anyAttribute namespace="##any" processContents="lax"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="Документ.НПФБФормаНПО_СНРСвод.ТабличнаяЧасть">
+		<xs:sequence>
+			<xs:element name="Строка" type="tns:Документ.НПФБФормаНПО_СНРСвод.ТабличнаяЧасть.Строка" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Документ.НПФБФормаНПО_СНРСвод.ТабличнаяЧасть.Строка">
+		<xs:sequence>
+			<xs:element name="НеразнесенныеПенсионныеВзносыЮридическихЛиц" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="НеразнесенныеПенсионныеВзносыФизическихЛиц" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ЗаблокированныеВзносыТеррористовЭкстремистов" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="НеидентифицированныеОшибочноПоступившиеДенежныеСредств" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
@@ -7032,9 +7062,9 @@
 	<xs:complexType name="КлючевыеСвойстваДоговор">
 		<xs:sequence>
 			<xs:element name="Ссылка" type="tns:СправочникСсылка.Договоры" minOccurs="0"/>
-			<xs:element name="ВидДоговора" type="tns:ВидыДоговоров"/>
-			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
-			<xs:element name="Контрагент" type="tns:КлючевыеСвойстваКонтрагент"/>
+			<xs:element name="ВидДоговора" type="tns:ВидыДоговоров" minOccurs="0"/>
+			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация" minOccurs="0"/>
+			<xs:element name="Контрагент" type="tns:КлючевыеСвойстваКонтрагент" minOccurs="0"/>
 			<xs:element name="ВалютаВзаиморасчетов" type="tns:КлючевыеСвойстваВалюта" minOccurs="0"/>
 			<xs:element name="РасчетыВУсловныхЕдиницах" type="xs:boolean" minOccurs="0"/>
 			<xs:element name="Наименование" type="xs:string" minOccurs="0"/>
@@ -7163,7 +7193,7 @@
 	<xs:complexType name="КлючевыеСвойстваКонтрагент">
 		<xs:sequence>
 			<xs:element name="Ссылка" type="tns:СправочникСсылка.Контрагенты" minOccurs="0"/>
-			<xs:element name="Наименование" type="xs:string"/>
+			<xs:element name="Наименование" type="xs:string" minOccurs="0"/>
 			<xs:element name="НаименованиеПолное" type="xs:string" minOccurs="0"/>
 			<xs:element name="ИНН" minOccurs="0">
 				<xs:simpleType>
@@ -7179,7 +7209,7 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-			<xs:element name="ЮридическоеФизическоеЛицо" type="tns:ЮридическоеФизическоеЛицо"/>
+			<xs:element name="ЮридическоеФизическоеЛицо" type="tns:ЮридическоеФизическоеЛицо" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
@@ -7747,6 +7777,19 @@
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
 	</xs:complexType>
+		<xs:complexType name="КлючевыеСвойстваНПФБФормаНПО_СНРСвод">
+		<xs:sequence>
+			<xs:element name="Дата" type="xs:dateTime"/>
+			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
+			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
+			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
+			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
 	<xs:complexType name="КлючевыеСвойстваНПФБФормаНПО_СОУД1">
 		<xs:sequence>
 			<xs:element name="Дата" type="xs:dateTime"/>
@@ -7893,7 +7936,6 @@
 	<xs:complexType name="КлючевыеСвойстваНПФБФормаНПО_Ф8">
 		<xs:sequence>
 			<xs:element name="Дата" type="xs:dateTime"/>
-			<xs:element name="ДатаФормы" type="xs:date" minOccurs="0"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
 			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
@@ -10841,8 +10883,8 @@
 					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваЦенныеБумаги"/>
 					<xs:element name="ISIN" type="xs:string" minOccurs="0"/>
 					<xs:element name="ВидЦеннойБумаги" type="tns:БНФОВидыЦеннойБумаги" minOccurs="0"/>
-					<xs:element name="Эминтент" type="tns:КлючевыеСвойстваКонтрагент" minOccurs="0"/>					
-					<xs:element name="ФинансовыйИнструмент" minOccurs="0">
+					<xs:element name="Эминтент" type="tns:КлючевыеСвойстваКонтрагент" nillable="true" minOccurs="0"/>
+					<xs:element name="ФинансовыйИнструмент" nillable="true" minOccurs="0">
 						<xs:complexType>
 							<xs:choice>
 								<xs:element name="БНФОАкцииСсылка" type="tns:КлючевыеСвойстваБНФОАкции" minOccurs="0"/>
