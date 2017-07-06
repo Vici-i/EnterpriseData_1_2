@@ -2442,13 +2442,22 @@
 	</xs:complexType>
 	<xs:complexType name="Документ.НПФБФормаНПО_А102РППО.ТабличнаяЧасть.Строка">
 		<xs:sequence>
-			<xs:element name="НомерСтрокиДокумента" type="tns:ТипНомерСтроки" minOccurs="0"/>
 			<xs:element name="ТипДоговора" type="tns:НПФБТипыДоговоровНПО" minOccurs="0"/>
 			<xs:element name="НомерПенсионнойСхемы" type="tns:КлючевыеСвойстваНПФБНомераПенсионныхСхем" minOccurs="0"/>
  			<xs:element name="ЮридическоеФизическоеЛицо" type="tns:ЮридическоеФизическоеЛицо" minOccurs="0"/>
-			<xs:element name="НаименованиеОперации" type="xs:string" minOccurs="0"/>
-			<xs:element name="НомерПоказателя" type="xs:string" minOccurs="0"/>
-			<xs:element name="ПоДаннымПерсонифицированногоУчета" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ОстатокРППОНаНачалоПериодаДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ДанныеПоДоначислениюПенсионныхВзносовНаНачалоПериодаДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ОстатокРППОНаКонецПериодаДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ДанныеПоДоначислениюПенсионныхВзносовНаКонецПериодаДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ПоступилоПенсионныхВзносовЗаПериодДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="СредстваНаправленныеНаУвеличениеРППОЗаСчетСредствСтраховогоРезерваДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ЦелевыеСредстваНаправленныеНаФормированиеРППОДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ДоходОтРазмещенияПенсионныхРезервовНаправленныйНаПополнениеРППОДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ВыплаченоИзПенсионныхРезервовДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ВыплатыПенсийДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ВыплатыВыкупныхСуммНаследникамБлагоприобретателямДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ОстаткиДенежныхСредствНаПенсионныхСчетахПослеПрекращенияОбязательствДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ИзменениеПенсионнойСхемыВСоответствииСДоговоромНПОДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
