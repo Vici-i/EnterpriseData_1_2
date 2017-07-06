@@ -1,5 +1,9 @@
 <xs:schema xmlns:ns1="http://www.1c.ru/SSL/Exchange/Message" xmlns:tns="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.2" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.2" attributeFormDefault="unqualified" elementFormDefault="qualified">
+<<<<<<< HEAD
 	<xs:import namespace="http://www.1c.ru/SSL/Exchange/Message"  schemaLocation="C:\dt\workspace\EnterpriseData_1_2\ExchangeMessage.xsd"/>
+=======
+	<xs:import namespace="http://www.1c.ru/SSL/Exchange/Message"  schemaLocation="c:\Temp\ed\ExchangeMessage.xsd"/>
+>>>>>>> origin/master
 	<xs:complexType name="Info">
 		<xs:sequence>
 			<xs:element name="Date" type="xs:date"/>
@@ -358,7 +362,7 @@
 			<xs:element name="Ссылка" type="tns:ДокументСсылка.БНФОДокументРасчетовСКонтрагентом" minOccurs="0"/>
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Номер" type="tns:ТипНомерДокумента"/>
-			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
+			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
@@ -2011,7 +2015,6 @@
 			<xs:element name="Вкладчик" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
 			<xs:element name="ПлатежныйДокумент" type="tns:КлючевыеСвойстваНПФББанковскиеТранзакции" minOccurs="0"/>
 			<xs:element name="ДоговорНПО" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
-			<xs:element name="УполномоченноеПодразделениеВкладчика" type="tns:КлючевыеСвойстваНПФБПодразделенияКонтрагентов" minOccurs="0"/>
 			<xs:element name="СуммаПенсВзносовДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:element name="СуммаЧастиПенсВзносовНаПополнениеСтрахРезерваДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:element name="СуммаЧастиПенсВзносовНаОУДДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
@@ -2109,9 +2112,28 @@
 	</xs:complexType>
 	<xs:complexType name="Документ.НПФБФормаНПО_ЖОВзносы.ТабличнаяЧасть.Строка">
 		<xs:sequence>
-			<xs:element name="НомерСтрокиДокумента" type="tns:ТипНомерСтроки" minOccurs="0"/>
-			<xs:element name="НаименованиеОперации" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ПоступлениеПенсионныхВзносовФизическихЛицДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ПризнаниеПенсионногоВзносаФизическогоЛицаОшибочнымДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ПоступлениеПенсионныхВзносовЮридическихЛицДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ПризнаниеПенсионногоВзносаЮридическогоЛицаОшибочнымДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ПоступлениеЦелевыхВзносовДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ПризнаниеЦелевогоВзносаОшибочнымДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ПоступлениеОшибочныхВзносовДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="НачислениеЦелевыхВзносовДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ЧастьПенсионныхВзносовНаОУДДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ИдентификацияЦелевыхВзнсоовДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ИдентификацияПенсионныхВзносовФизическихЛицДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ИдентификацияПенсионныхВзносовЮридическихЛицДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="СуммаВзносовПодлежащаяПереводуСФизическихНаЮридическихЛицДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="СуммаВзносовПодлежащаяПереводуСЮридическихНаФизическихЛицДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ЗачислениеВзносовФизическихЛицВРППОПоСтраховымДоговорамДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ЗачислениеВзносовФизическихЛицВРППОПоИнвестиционнымДоговорамДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ЗачислениеВзносовЮридическихЛицВРППОПоСтраховымДоговорамДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ЗачислениеВзносовЮридическихЛицВРППОПоИнвестиционнымДоговорамДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="СуммаПоСтраховымДоговорамНаправленнаяВСтраховойРезервДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="СуммаПоИнвестиционнымДоговорамНаправленнаяВСтраховойРезервДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="СуммаИспользованияСтраховогоРезерваВРППОПоСтраховымДоговорамДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="СуммаИспользованияСтраховогоРезерваВРППОПоИнвестиционнымДоговорамДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
@@ -2156,7 +2178,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -2202,7 +2224,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -2250,7 +2272,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -2295,7 +2317,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -2341,7 +2363,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -3320,9 +3342,6 @@
 		<xs:sequence>
 			<xs:element name="НомерСтрокиДокумента" type="tns:ТипНомерСтроки" minOccurs="0"/>
 			<xs:element name="ПлатежныйДокумент" type="tns:КлючевыеСвойстваНПФББанковскиеТранзакции" minOccurs="0"/>
-			<xs:element name="Вкладчик" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
-			<xs:element name="ДоговорНПО" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
-			<xs:element name="ВидКлиента" type="tns:НПФБТипыВзносовНПО" minOccurs="0"/>
 			<xs:element name="СуммаНеразнесенныхПенсВзносовДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
@@ -3354,8 +3373,37 @@
 			<xs:element name="ПлатежныйДокумент" type="tns:КлючевыеСвойстваНПФББанковскиеТранзакции" minOccurs="0"/>
 			<xs:element name="Вкладчик" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
 			<xs:element name="ДоговорНПО" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
-			<xs:element name="ВидКлиента" type="tns:НПФБТипыВзносовНПО" minOccurs="0"/>
 			<xs:element name="СуммаНеразнесенныхПенсВзносовДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+	<xs:complexType name="Документ.НПФБФормаНПО_СНРСвод">
+		<xs:complexContent>
+			<xs:extension base="ns1:Object">
+				<xs:sequence>
+					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваНПФБФормаНПО_СНРСвод"/>
+					<xs:element name="ДатаНачала" type="xs:date" minOccurs="0"/>
+					<xs:element name="ДатаОкончания" type="xs:date" minOccurs="0"/>
+					<xs:element name="ТабличнаяЧасть" type="tns:Документ.НПФБФормаНПО_СНРСвод.ТабличнаяЧасть"/>
+					<xs:element name="ДополнительныеРеквизиты" type="tns:ДополнительныеРеквизиты" minOccurs="0"/>
+					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:anyAttribute namespace="##any" processContents="lax"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="Документ.НПФБФормаНПО_СНРСвод.ТабличнаяЧасть">
+		<xs:sequence>
+			<xs:element name="Строка" type="tns:Документ.НПФБФормаНПО_СНРСвод.ТабличнаяЧасть.Строка" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Документ.НПФБФормаНПО_СНРСвод.ТабличнаяЧасть.Строка">
+		<xs:sequence>
+			<xs:element name="НеразнесенныеПенсионныеВзносыЮридическихЛицДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="НеразнесенныеПенсионныеВзносыФизическихЛицДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="ЗаблокированныеВзносыТеррористовЭкстремистовДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="НеидентифицированныеОшибочноПоступившиеДенежныеСредствДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
@@ -6780,8 +6828,8 @@
 		<xs:sequence>
 			<xs:element name="Ссылка" type="tns:СправочникСсылка.БНФОСчетаАналитическогоУчета" minOccurs="0"/>
 			<xs:element name="Код" type="xs:string" minOccurs="0"/>
-			<xs:element name="Валюта" type="tns:КлючевыеСвойстваВалюта"/>	
-			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>			
+			<xs:element name="Валюта" type="tns:КлючевыеСвойстваВалюта" minOccurs="0"/>	
+			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация" minOccurs="0"/>			
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
@@ -7027,9 +7075,9 @@
 	<xs:complexType name="КлючевыеСвойстваДоговор">
 		<xs:sequence>
 			<xs:element name="Ссылка" type="tns:СправочникСсылка.Договоры" minOccurs="0"/>
-			<xs:element name="ВидДоговора" type="tns:ВидыДоговоров"/>
-			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
-			<xs:element name="Контрагент" type="tns:КлючевыеСвойстваКонтрагент"/>
+			<xs:element name="ВидДоговора" type="tns:ВидыДоговоров" minOccurs="0"/>
+			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация" minOccurs="0"/>
+			<xs:element name="Контрагент" type="tns:КлючевыеСвойстваКонтрагент" minOccurs="0"/>
 			<xs:element name="ВалютаВзаиморасчетов" type="tns:КлючевыеСвойстваВалюта" minOccurs="0"/>
 			<xs:element name="РасчетыВУсловныхЕдиницах" type="xs:boolean" minOccurs="0"/>
 			<xs:element name="Наименование" type="xs:string" minOccurs="0"/>
@@ -7158,7 +7206,7 @@
 	<xs:complexType name="КлючевыеСвойстваКонтрагент">
 		<xs:sequence>
 			<xs:element name="Ссылка" type="tns:СправочникСсылка.Контрагенты" minOccurs="0"/>
-			<xs:element name="Наименование" type="xs:string"/>
+			<xs:element name="Наименование" type="xs:string" minOccurs="0"/>
 			<xs:element name="НаименованиеПолное" type="xs:string" minOccurs="0"/>
 			<xs:element name="ИНН" minOccurs="0">
 				<xs:simpleType>
@@ -7174,7 +7222,7 @@
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>
-			<xs:element name="ЮридическоеФизическоеЛицо" type="tns:ЮридическоеФизическоеЛицо"/>
+			<xs:element name="ЮридическоеФизическоеЛицо" type="tns:ЮридическоеФизическоеЛицо" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
@@ -7265,7 +7313,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7278,7 +7326,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7291,7 +7339,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7304,7 +7352,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7317,7 +7365,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7330,7 +7378,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7343,7 +7391,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7356,7 +7404,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7369,7 +7417,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7382,7 +7430,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7395,7 +7443,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7408,7 +7456,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7421,7 +7469,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7434,7 +7482,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7447,7 +7495,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7460,7 +7508,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7473,7 +7521,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7486,7 +7534,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7513,7 +7561,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7526,7 +7574,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7539,7 +7587,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7552,7 +7600,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7565,7 +7613,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7578,7 +7626,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7591,7 +7639,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7604,7 +7652,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7617,7 +7665,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7630,7 +7678,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7643,7 +7691,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7656,7 +7704,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7669,7 +7717,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7682,7 +7730,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7695,7 +7743,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7708,7 +7756,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7721,7 +7769,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7734,7 +7782,20 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
+			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
+			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:anyAttribute namespace="##any" processContents="lax"/>
+	</xs:complexType>
+		<xs:complexType name="КлючевыеСвойстваНПФБФормаНПО_СНРСвод">
+		<xs:sequence>
+			<xs:element name="Дата" type="xs:dateTime"/>
+			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
+			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7747,7 +7808,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7760,7 +7821,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7773,7 +7834,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7786,7 +7847,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7799,7 +7860,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7812,7 +7873,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7825,7 +7886,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7838,7 +7899,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7851,7 +7912,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7864,7 +7925,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7877,7 +7938,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7888,10 +7949,10 @@
 	<xs:complexType name="КлючевыеСвойстваНПФБФормаНПО_Ф8">
 		<xs:sequence>
 			<xs:element name="Дата" type="xs:dateTime"/>
-			<xs:element name="ДатаФормы" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормы" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7904,7 +7965,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -7917,7 +7978,7 @@
 			<xs:element name="Дата" type="xs:dateTime"/>
 			<xs:element name="Организация" type="tns:КлючевыеСвойстваОрганизация"/>
 			<xs:element name="ИмяФайла" type="xs:string" minOccurs="0"/>
-			<xs:element name="ДатаФормирования" type="xs:date" minOccurs="0"/>
+			<xs:element name="ДатаФормирования" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ВерсияФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ГодФормата" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерЧастиФайла" type="xs:string" minOccurs="0"/>
@@ -10836,8 +10897,8 @@
 					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваЦенныеБумаги"/>
 					<xs:element name="ISIN" type="xs:string" minOccurs="0"/>
 					<xs:element name="ВидЦеннойБумаги" type="tns:БНФОВидыЦеннойБумаги" minOccurs="0"/>
-					<xs:element name="Эминтент" type="tns:КлючевыеСвойстваКонтрагент"/>					
-					<xs:element name="ФинансовыйИнструмент" minOccurs="0">
+					<xs:element name="Эминтент" type="tns:КлючевыеСвойстваКонтрагент" nillable="true" minOccurs="0"/>
+					<xs:element name="ФинансовыйИнструмент" nillable="true" minOccurs="0">
 						<xs:complexType>
 							<xs:choice>
 								<xs:element name="БНФОАкцииСсылка" type="tns:КлючевыеСвойстваБНФОАкции" minOccurs="0"/>
