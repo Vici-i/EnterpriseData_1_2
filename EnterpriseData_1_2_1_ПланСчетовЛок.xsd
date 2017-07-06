@@ -2264,11 +2264,13 @@
 	<xs:complexType name="Документ.НПФБФормаНПО_СВО2.ТабличнаяЧасть.Строка">
 		<xs:sequence>
 			<xs:element name="НомерСтрокиДокумента" type="tns:ТипНомерСтроки" minOccurs="0"/>
-			<xs:element name="ВидВыплаты" type="tns:КлючевыеСвойстваНПФБВидОперацииНПО" minOccurs="0"/>
- 			<xs:element name="ЮридическоеФизическоеЛицо" type="tns:ЮридическоеФизическоеЛицо" minOccurs="0"/>
-            <xs:element name="Вкладчик" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
-            <xs:element name="ДоговорНПО" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
+			<xs:element name="НаименованиеОперации" type="xs:string" minOccurs="0"/>
+			<xs:element name="ЮридическоеФизическоеЛицо" type="tns:ЮридическоеФизическоеЛицо" minOccurs="0"/>
+			<xs:element name="Вкладчик" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
+			<xs:element name="ДоговорНПО" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
 			<xs:element name="СуммаИзлишнихВыплатПоДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="Причина" type="xs:string" minOccurs="0"/>
+			<xs:element name="ДатаВозникновения" type="xs:date" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
@@ -2310,7 +2312,7 @@
 	<xs:complexType name="Документ.НПФБФормаНПО_СВО3.ТабличнаяЧасть.Строка">
 		<xs:sequence>
 			<xs:element name="НомерСтрокиДокумента" type="tns:ТипНомерСтроки" minOccurs="0"/>
-			<xs:element name="ВидВыплаты" type="tns:КлючевыеСвойстваНПФБВидОперацииНПО" minOccurs="0"/>
+			<xs:element name="НаименованиеОперации" type="xs:string" minOccurs="0"/>
  			<xs:element name="ЮридическоеФизическоеЛицо" type="tns:ЮридическоеФизическоеЛицо" minOccurs="0"/>
             <xs:element name="Вкладчик" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
             <xs:element name="ДоговорНПО" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
@@ -2358,6 +2360,7 @@
 	<xs:complexType name="Документ.НПФБФормаНПО_СРППОНО.ТабличнаяЧасть.Строка">
 		<xs:sequence>
 			<xs:element name="НомерСтрокиДокумента" type="tns:ТипНомерСтроки" minOccurs="0"/>
+			<xs:element name="НаименованиеОперации" type="xs:string" minOccurs="0"/>
 			<xs:element name="НомерПенсионнойСхемы" type="tns:КлючевыеСвойстваНПФБНомераПенсионныхСхем" minOccurs="0"/>
  			<xs:element name="ЮридическоеФизическоеЛицо" type="tns:ЮридическоеФизическоеЛицо" minOccurs="0"/>
 			<xs:element name="ТипДоговора" type="tns:НПФБТипыДоговоровНПО" minOccurs="0"/>
@@ -2526,7 +2529,7 @@
 	<xs:complexType name="Документ.НПФБФормаНПО_ЖОВыплаты.ТабличнаяЧасть.Строка">
 		<xs:sequence>
 			<xs:element name="НомерСтрокиДокумента" type="tns:ТипНомерСтроки" minOccurs="0"/>
-			<xs:element name="ВидВыплаты" type="tns:КлючевыеСвойстваНПФБВидОперацииНПО" minOccurs="0"/>
+			<xs:element name="НаименованиеОперации" type="xs:string" minOccurs="0"/>
 			<xs:element name="ДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
@@ -2666,6 +2669,7 @@
 	<xs:complexType name="Документ.НПФБФормаНПО_АНДФЛ_ФЛ.ТабличнаяЧасть.Строка">
 		<xs:sequence>
 			<xs:element name="НомерСтрокиДокумента" type="tns:ТипНомерСтроки" minOccurs="0"/>
+			<xs:element name="ТипКлиента" type="tns:НДФЛСтавкиНалогообложенияРезидента" minOccurs="0"/>
 			<xs:element name="СуммаУдержанногоНДФЛДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
@@ -3560,6 +3564,7 @@
 			<xs:element name="Вкладчик" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
 			<xs:element name="ДоговорНПО" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
 			<xs:element name="СуммаПоступившихИдентифицированныхПенсВзносовЮЛДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
+			<xs:element name="СуммаПоступившихИдентифицированныхПенсВзносовФЛДанныеСПА" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
