@@ -206,7 +206,13 @@
 	<xs:complexType name="БНФОЗначенияПоказателей.Строка">
 		<xs:sequence>
 			<xs:element name="Показатель" type="xs:string" minOccurs="0"/>
-			<xs:element name="Валюта" type="tns:КлючевыеСвойстваВалюта" minOccurs="0"/>
+			<xs:element name="Валюта">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
 			<xs:element name="Сценарий" type="xs:string" minOccurs="0"/>			
 			<xs:element name="Аналитика1" type="xs:string" minOccurs="0"/>
 			<xs:element name="Аналитика2" type="xs:string" minOccurs="0"/>
