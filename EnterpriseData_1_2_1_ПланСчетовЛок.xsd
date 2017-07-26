@@ -2733,6 +2733,7 @@
 			<xs:element name="ПлатежныйДокумент" type="tns:КлючевыеСвойстваНПФББанковскиеТранзакции" minOccurs="0"/>
 			<xs:element name="Вкладчик" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
 			<xs:element name="ДоговорНПО" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
+			<xs:element name="ТипДоговора" type="tns:НПФБТипыДоговоровНПО" minOccurs="0"/>
 			<xs:element name="УполномоченноеПодразделениеВкладчика" type="tns:КлючевыеСвойстваНПФБПодразделенияКонтрагентов" minOccurs="0"/>
 			<xs:element name="СводныйРеестрВедомостейВедомостьНомер" type="xs:string" minOccurs="0"/>
 			<xs:element name="СводныйРеестрВедомостейВедомостьДата" type="xs:dateTime" minOccurs="0"/>
@@ -2769,6 +2770,7 @@
 			<xs:element name="ПлатежныйДокумент" type="tns:КлючевыеСвойстваНПФББанковскиеТранзакции" minOccurs="0"/>
 			<xs:element name="Вкладчик" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
 			<xs:element name="ДоговорНПО" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
+			<xs:element name="ТипДоговора" type="tns:НПФБТипыДоговоровНПО" minOccurs="0"/>
 			<xs:element name="УполномоченноеПодразделениеВкладчика" type="tns:КлючевыеСвойстваНПФБПодразделенияКонтрагентов" minOccurs="0"/>
 			<xs:element name="СводныйРеестрВедомостейВедомостьНомер" type="xs:string" minOccurs="0"/>
 			<xs:element name="СводныйРеестрВедомостейВедомостьДата" type="xs:dateTime" minOccurs="0"/>
@@ -2806,6 +2808,7 @@
 			<xs:element name="ТипПенсионногоВзноса" type="tns:НПФБТипыВзносовНПО" minOccurs="0"/>
 			<xs:element name="Вкладчик" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
 			<xs:element name="ДоговорНПО" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
+			<xs:element name="ТипДоговора" type="tns:НПФБТипыДоговоровНПО" minOccurs="0"/>
 			<xs:element name="УполномоченноеПодразделениеВкладчика" type="tns:КлючевыеСвойстваНПФБПодразделенияКонтрагентов" minOccurs="0"/>
 			<xs:element name="ПенсионныйВзносВкладчика" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:element name="ПроцентовОтСуммыПенсионногоВзносаВкладчикаПоДоговоруНПО" minOccurs="0">
@@ -2845,6 +2848,7 @@
 			<xs:element name="ПлатежныйДокумент" type="tns:КлючевыеСвойстваНПФББанковскиеТранзакции" minOccurs="0"/>
 			<xs:element name="Вкладчик" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
 			<xs:element name="ДоговорНПО" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
+			<xs:element name="ТипДоговора" type="tns:НПФБТипыДоговоровНПО" minOccurs="0"/>
 			<xs:element name="УполномоченноеПодразделениеВкладчика" type="tns:КлючевыеСвойстваНПФБПодразделенияКонтрагентов" minOccurs="0"/>
 			<xs:element name="СводныйРеестрВедомостейВедомостьНомер" type="xs:string" minOccurs="0"/>
 			<xs:element name="СводныйРеестрВедомостейВедомостьДата" type="xs:dateTime" minOccurs="0"/>
@@ -2881,6 +2885,7 @@
 			<xs:element name="ПлатежныйДокумент" type="tns:КлючевыеСвойстваНПФББанковскиеТранзакции" minOccurs="0"/>
 			<xs:element name="Вкладчик" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
 			<xs:element name="ДоговорНПО" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
+			<xs:element name="ТипДоговора" type="tns:НПФБТипыДоговоровНПО" minOccurs="0"/>
 			<xs:element name="УполномоченноеПодразделениеВкладчика" type="tns:КлючевыеСвойстваНПФБПодразделенияКонтрагентов" minOccurs="0"/>
 			<xs:element name="СводныйРеестрВедомостейВедомостьНомер" type="xs:string" minOccurs="0"/>
 			<xs:element name="СводныйРеестрВедомостейВедомостьДата" type="xs:dateTime" minOccurs="0"/>
@@ -3090,6 +3095,7 @@
 			<xs:element name="Вкладчик" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
 			<xs:element name="ПлатежныйДокумент" type="tns:КлючевыеСвойстваНПФББанковскиеТранзакции" minOccurs="0"/>
 			<xs:element name="ДоговорНПО" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
+			<xs:element name="ТипДоговора" type="tns:НПФБТипыДоговоровНПО" minOccurs="0"/>
 			<xs:element name="ДатаИдентификации" type="xs:dateTime" minOccurs="0"/>
 			<xs:element name="ДокументОснованиеНомер" type="xs:string" minOccurs="0"/>
 			<xs:element name="ДокументОснованиеДата" type="xs:dateTime" minOccurs="0"/>
@@ -3163,10 +3169,12 @@
 			<xs:element name="ПлатежныйДокумент" type="tns:КлючевыеСвойстваНПФББанковскиеТранзакции" minOccurs="0"/>
 			<xs:element name="ВкладчикДоИзменения" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
 			<xs:element name="ДоговорНПОДоИзменения" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
+			<xs:element name="ТипДоговораДоИзменения" type="tns:НПФБТипыДоговоровНПО" minOccurs="0"/>
 			<xs:element name="УполномоченноеПодразделениеВкладчикаДоИзменения" type="tns:КлючевыеСвойстваНПФБПодразделенияКонтрагентов" minOccurs="0"/>
 			<xs:element name="ТипПенсионногоВзносаДоИзменения" type="tns:НПФБТипыВзносовНПО" minOccurs="0"/>
 			<xs:element name="ВкладчикПослеИзменения" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
 			<xs:element name="ДоговорНПОПослеИзменения" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
+			<xs:element name="ТипДоговораПослеИзменения" type="tns:НПФБТипыДоговоровНПО" minOccurs="0"/>
 			<xs:element name="УполномоченноеПодразделениеВкладчикаПослеИзменения" type="tns:КлючевыеСвойстваНПФБПодразделенияКонтрагентов" minOccurs="0"/>
 			<xs:element name="ТипПенсионногоВзносаПослеИзменения" type="tns:НПФБТипыВзносовНПО" minOccurs="0"/>
 			<xs:element name="ДокументОснованиеНомер" type="xs:string" minOccurs="0"/>
@@ -3229,6 +3237,7 @@
 			<xs:element name="ПлатежныйДокумент" type="tns:КлючевыеСвойстваНПФББанковскиеТранзакции" minOccurs="0"/>
 			<xs:element name="Вкладчик" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
 			<xs:element name="ДоговорНПО" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
+			<xs:element name="ТипДоговора" type="tns:НПФБТипыДоговоровНПО" minOccurs="0"/>
 			<xs:element name="ТипПенсионногоВзноса" type="tns:НПФБТипыВзносовНПО" minOccurs="0"/>
 			<xs:element name="ДокументОснованиеНомер" type="xs:string" minOccurs="0"/>
 			<xs:element name="ДокументОснованиеДата" type="xs:dateTime" minOccurs="0"/>
@@ -4000,6 +4009,7 @@
 			<xs:element name="ПлатежныйДокумент" type="tns:КлючевыеСвойстваНПФББанковскиеТранзакции" minOccurs="0"/>
 			<xs:element name="Вкладчик" type="tns:КлючевыеСвойстваНПФБКонтрагенты" minOccurs="0"/>
 			<xs:element name="ДоговорНПО" type="tns:КлючевыеСвойстваНПФБДоговорыКонтрагентов" minOccurs="0"/>
+			<xs:element name="ТипДоговора" type="tns:НПФБТипыДоговоровНПО" minOccurs="0"/>
 			<xs:element name="УполномоченноеПодразделениеВкладчика" type="tns:КлючевыеСвойстваНПФБПодразделенияКонтрагентов" minOccurs="0"/>
 			<xs:element name="УвеличениеВзносаНаОУД" type="tns:ТипСумма" minOccurs="0"/>
 			<xs:element name="УменьшениеВзносаНаОУД" type="tns:ТипСумма" minOccurs="0"/>
