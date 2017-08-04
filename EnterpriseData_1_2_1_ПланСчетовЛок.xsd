@@ -240,6 +240,8 @@
 					<xs:element name="Содержание" type="xs:string" minOccurs="0"/>
 					<xs:element name="Комментарий" type="xs:string" minOccurs="0"/>
 					<xs:element name="БНФОБухгалтерскиеЗаписи" type="tns:БНФОБухгалтерскиеЗаписи" minOccurs="0"/>
+					<xs:element name="ПризнакДоверительногоУправления" type="tns:БНФОПризнакиДоверительногоУправления" minOccurs="0"/>
+					<xs:element name="ВидДеятельностиНПФ" type="tns:БНФОВидыДеятельностиНПФ" minOccurs="0"/>					
 					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
 				<xs:anyAttribute namespace="##any" processContents="lax"/>
