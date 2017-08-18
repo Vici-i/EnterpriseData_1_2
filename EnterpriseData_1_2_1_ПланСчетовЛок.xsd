@@ -178,6 +178,9 @@
 				<xs:sequence>
 					<xs:element name="КлючевыеСвойства" type="tns:КлючевыеСвойстваБНФОЗначенияПоказателейОтчетности"/>
 					<xs:element name="Комментарий" type="xs:string" minOccurs="0"/>
+					<xs:element name="ВерсияТаксономии" type="xs:string" minOccurs="0"/>
+					<xs:element name="КонцепцияТаксономии" type="xs:string" minOccurs="0"/>
+					<xs:element name="ИдентификаторШаблонаЗагрузки" type="xs:string" minOccurs="0"/>
 					<xs:element name="БНФОЗначенияПоказателей" type="tns:БНФОЗначенияПоказателей" minOccurs="0"/>
 					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
@@ -205,6 +208,7 @@
 	</xs:complexType>
 	<xs:complexType name="БНФОЗначенияПоказателей.Строка">
 		<xs:sequence>
+			<xs:element name="НомерСтрокиДокумента" type="tns:ТипНомерСтроки" minOccurs="0"/>
 			<xs:element name="Показатель" type="xs:string" minOccurs="0"/>
 			<xs:element name="Валюта">
 				<xs:simpleType>
@@ -219,6 +223,13 @@
 			<xs:element name="Аналитика3" type="xs:string" minOccurs="0"/>
 			<xs:element name="Аналитика4" type="xs:string" minOccurs="0"/>
 			<xs:element name="Аналитика5" type="xs:string" minOccurs="0"/>
+			<xs:element name="Аналитика6" type="xs:string" minOccurs="0"/>
+			<xs:element name="ВидАналитики1" type="xs:string" minOccurs="0"/>
+			<xs:element name="ВидАналитики2" type="xs:string" minOccurs="0"/>
+			<xs:element name="ВидАналитики3" type="xs:string" minOccurs="0"/>
+			<xs:element name="ВидАналитики4" type="xs:string" minOccurs="0"/>
+			<xs:element name="ВидАналитики5" type="xs:string" minOccurs="0"/>
+			<xs:element name="ВидАналитики6" type="xs:string" minOccurs="0"/>
 			<xs:element name="ЗначениеЧисло" type="tns:БНФОТипПоказательОтчетности" minOccurs="0"/>
 			<xs:element name="ЗначениеТекст" type="xs:string" minOccurs="0"/>
 			<xs:element name="ЗначениеПоказатель" type="xs:string" minOccurs="0"/>		
@@ -240,8 +251,8 @@
 					<xs:element name="Содержание" type="xs:string" minOccurs="0"/>
 					<xs:element name="Комментарий" type="xs:string" minOccurs="0"/>
 					<xs:element name="БНФОБухгалтерскиеЗаписи" type="tns:БНФОБухгалтерскиеЗаписи" minOccurs="0"/>
-					<xs:element name="ПризнакДоверительногоУправления" type="tns:БНФОПризнакиДоверительногоУправления" minOccurs="0"/>
-					<xs:element name="ВидДеятельностиНПФ" type="tns:БНФОВидыДеятельностиНПФ" minOccurs="0"/>					
+					<xs:element name="ПризнакДоверительногоУправления" type="tns:БНФОПризнакиДоверительногоУправления" nillable="true" minOccurs="0"/>
+					<xs:element name="ВидДеятельностиНПФ" type="tns:БНФОВидыДеятельностиНПФ" nillable="true" minOccurs="0"/>
 					<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
 				<xs:anyAttribute namespace="##any" processContents="lax"/>
@@ -305,7 +316,8 @@
 			<xs:element name="ВидСубконтоКт2" type="tns:КлючевыеСвойстваБНФОВидыСубконтоБанковские" minOccurs="0"/>
 			<xs:element name="ВидСубконтоКт3" type="tns:КлючевыеСвойстваБНФОВидыСубконтоБанковские" minOccurs="0"/>
 			<xs:element name="СимволОФРДт" type="xs:string" minOccurs="0"/>
-			<xs:element name="СимволОФРКт" type="xs:string" minOccurs="0"/>			
+			<xs:element name="СимволОФРКт" type="xs:string" minOccurs="0"/>
+			<xs:element name="Портфель" type="xs:string" minOccurs="0"/>
 			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 		<xs:anyAttribute namespace="##any" processContents="lax"/>
@@ -8963,6 +8975,7 @@
 						<xs:element name="АвизоПоМПЗИсходящееСсылка" type="tns:ДокументСсылка.АвизоПоМПЗИсходящее" minOccurs="0"/>
 						<xs:element name="АктВыполненныхРаботСсылка" type="tns:ДокументСсылка.АктВыполненныхРабот" minOccurs="0"/>
 						<xs:element name="БНФОБухгалтерскаяОперацияСсылка" type="tns:ДокументСсылка.БНФОБухгалтерскаяОперация" minOccurs="0"/>
+						<xs:element name="БНФОСчетАналитическогоУчетаСсылка" type="tns:СправочникСсылка.БНФОСчетаАналитическогоУчета" minOccurs="0"/>
 						<xs:element name="ВозвратДенежныхДокументовПоставщикуСсылка" type="tns:ДокументСсылка.ВозвратДенежныхДокументовПоставщику" minOccurs="0"/>
 						<xs:element name="ВозвратМатериаловИзПроизводстваСсылка" type="tns:ДокументСсылка.ВозвратМатериаловИзПроизводства" minOccurs="0"/>
 						<xs:element name="ВозвратМатериаловИзЭксплуатацииСсылка" type="tns:ДокументСсылка.ВозвратМатериаловИзЭксплуатации" minOccurs="0"/>
