@@ -2750,9 +2750,9 @@
 			<xs:element name="ТипДоговора" type="tns:НПФБТипыДоговоровНПО" minOccurs="0"/>
 			<xs:element name="УполномоченноеПодразделениеВкладчика" type="tns:КлючевыеСвойстваНПФБПодразделенияКонтрагентов" minOccurs="0"/>
 			<xs:element name="СводныйРеестрВедомостейВедомостьНомер" type="xs:string" minOccurs="0"/>
-			<xs:element name="СводныйРеестрВедомостейВедомостьДата" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="СводныйРеестрВедомостейВедомостьДата" type="xs:string" minOccurs="0"/>
 			<xs:element name="РаспоряжениеПриказФондаРешениеНомер" type="xs:string" minOccurs="0"/>
-			<xs:element name="РаспоряжениеПриказФондаРешениеДата" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="РаспоряжениеПриказФондаРешениеДата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ФИОФизическогоЛица" type="xs:string" minOccurs="0"/>
 			<xs:element name="СНИЛС" type="xs:string" minOccurs="0"/>
 			<xs:element name="СуммаПодлежащаяРазблокировке" type="tns:ТипСумма" minOccurs="0"/>
@@ -2787,9 +2787,9 @@
 			<xs:element name="ТипДоговора" type="tns:НПФБТипыДоговоровНПО" minOccurs="0"/>
 			<xs:element name="УполномоченноеПодразделениеВкладчика" type="tns:КлючевыеСвойстваНПФБПодразделенияКонтрагентов" minOccurs="0"/>
 			<xs:element name="СводныйРеестрВедомостейВедомостьНомер" type="xs:string" minOccurs="0"/>
-			<xs:element name="СводныйРеестрВедомостейВедомостьДата" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="СводныйРеестрВедомостейВедомостьДата" type="xs:string" minOccurs="0"/>
 			<xs:element name="РаспоряжениеПриказФондаРешениеНомер" type="xs:string" minOccurs="0"/>
-			<xs:element name="РаспоряжениеПриказФондаРешениеДата" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="РаспоряжениеПриказФондаРешениеДата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ФИОФизическогоЛица" type="xs:string" minOccurs="0"/>
 			<xs:element name="СНИЛС" type="xs:string" minOccurs="0"/>
 			<xs:element name="СуммаПодлежащаяРазблокировке" type="tns:ТипСумма" minOccurs="0"/>
@@ -2865,9 +2865,9 @@
 			<xs:element name="ТипДоговора" type="tns:НПФБТипыДоговоровНПО" minOccurs="0"/>
 			<xs:element name="УполномоченноеПодразделениеВкладчика" type="tns:КлючевыеСвойстваНПФБПодразделенияКонтрагентов" minOccurs="0"/>
 			<xs:element name="СводныйРеестрВедомостейВедомостьНомер" type="xs:string" minOccurs="0"/>
-			<xs:element name="СводныйРеестрВедомостейВедомостьДата" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="СводныйРеестрВедомостейВедомостьДата" type="xs:string" minOccurs="0"/>
 			<xs:element name="РаспоряжениеПриказФондаРешениеНомер" type="xs:string" minOccurs="0"/>
-			<xs:element name="РаспоряжениеПриказФондаРешениеДата" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="РаспоряжениеПриказФондаРешениеДата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ФИОФизическогоЛица" type="xs:string" minOccurs="0"/>
 			<xs:element name="СНИЛС" type="xs:string" minOccurs="0"/>
 			<xs:element name="СуммаПодлежащаяБлокировке" type="tns:ТипСумма" minOccurs="0"/>
@@ -2902,9 +2902,9 @@
 			<xs:element name="ТипДоговора" type="tns:НПФБТипыДоговоровНПО" minOccurs="0"/>
 			<xs:element name="УполномоченноеПодразделениеВкладчика" type="tns:КлючевыеСвойстваНПФБПодразделенияКонтрагентов" minOccurs="0"/>
 			<xs:element name="СводныйРеестрВедомостейВедомостьНомер" type="xs:string" minOccurs="0"/>
-			<xs:element name="СводныйРеестрВедомостейВедомостьДата" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="СводныйРеестрВедомостейВедомостьДата" type="xs:string" minOccurs="0"/>
 			<xs:element name="РаспоряжениеПриказФондаРешениеНомер" type="xs:string" minOccurs="0"/>
-			<xs:element name="РаспоряжениеПриказФондаРешениеДата" type="xs:dateTime" minOccurs="0"/>
+			<xs:element name="РаспоряжениеПриказФондаРешениеДата" type="xs:string" minOccurs="0"/>
 			<xs:element name="ФИОФизическогоЛица" type="xs:string" minOccurs="0"/>
 			<xs:element name="СНИЛС" type="xs:string" minOccurs="0"/>
 			<xs:element name="СуммаПодлежащаяБлокировке" type="tns:ТипСумма" minOccurs="0"/>
