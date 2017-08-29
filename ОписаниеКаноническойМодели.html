@@ -65,6 +65,8 @@
 ќбща€ информаци€</A>
 <UL class=TOC><LI><A href="#00000000231">Ќазначение</A>
 <LI><A href="#00000000232">¬ерсионирование</A>
+</LI></UL><LI><A href="#00000000466">ѕроводки Ѕ” и Ќ”</A>
+<UL class=TOC><LI><A href="#00000000467">ќпераци€ бухгалтерского и налогового учета (набор проводок)</A>
 </LI></UL><LI><A href="#00000000273">‘ормы Ќѕќ</A>
 <LI><A href="#00000000274">‘ормы первичных учетных документов дл€ отражени€ поступивших взносов по договорам Ќѕќ†††</A>
 <UL class=TOC><LI><A href="#00000000278">‘орма є »—ѕј-01 “Ё ёЋ</A>
@@ -131,8 +133,10 @@
 <UL class=TOC><LI><A href="#00000000448">—правочник "ќрганизации"</A>
 <LI><A href="#00000000450">—правочник "Ѕанковские транзакции"</A>
 <LI><A href="#00000000452">—правочник "¬ид операции Ќѕќ"</A>
-<LI><A href="#00000000456">—правочник " онтрагенты"</A>
-<LI><A href="#00000000454">—правочник "ƒоговоры контрагентов"</A>
+<LI><A href="#00000000463">—правочник " онтрагенты"</A>
+<LI><A href="#00000000462">—правочник "ƒоговоры контрагентов"</A>
+<LI><A href="#00000000456">—правочник " онтрагенты" (дл€ интеграции Ќѕќ)</A>
+<LI><A href="#00000000454">—правочник "ƒоговоры контрагентов" (дл€ интеграции Ќѕќ)</A>
 <LI><A href="#00000000458">—правочник "Ќомера пенсионных схем"</A>
 <LI><A href="#00000000460">—правочник "ѕодразделени€ контрагентов"</A>
 </LI></UL><LI><A href="#00000000109">“ипы формата</A>
@@ -151,6 +155,330 @@
 ‘ормат поставл€етс€ в рамках в виде файла EnterpriseData_X_Y_Z_V.xsd, где X,Y,Z Ц номер версии базового формата модели данных фирмы Ђ1—ї, V Ц номер минорной версии формата. ћинорна€ верси€ формата повышаетс€, если в существующие сущности добавл€ютс€ новые необ€зательные дл€ заполнени€ пол€. ћажорна€ верси€ формата повышаетс€ только в случае выпуска новой версии модели данных фирмы Ђ1—ї
 ?†ћодель данных Ќѕ‘ ЂЅлагососто€ниеї
 ‘ормат поставл€етс€ в виде файла EnterpriseData_X_Y_Z_V_W.xsd, где X,Y,Z,V Ц номер версии базового формата модели данных Ђ1—:ЅЌ‘ќї, W Ц номер минорной версии формата. ћинорна€ верси€ формата повышаетс€, если в существующие сущности добавл€ютс€ новые необ€зательные дл€ заполнени€ пол€. ћажорна€ верси€ формата повышаетс€ только в случае выпуска новой версии модели данных Ђ1—:ЅЌ‘ќї</P>
+<H2><A name=00000000466>ѕроводки Ѕ” и Ќ”</A></H2>
+<H3><A name=00000000467>ќпераци€ бухгалтерского и налогового учета (набор проводок)</A></H3>
+<P><B>ƒокумент.ЅЌ‘ќЅухгалтерска€ќпераци€</B></P>
+<TABLE id=table3 class=withBorder cellSpacing=0 cellPadding=3 width=800 border=0>
+<thead><b> Ўапка </b></thead> 
+<tr BGCOLOR=lightgrey><td> —войства</td><td> “ип значени€</td><td> ќб€зательный</td><td> ѕо€снение</td></tr>
+<tr >
+	<td align=left> лючевые—войства</td><td align=left><A href="#т_ лючевые—войстваЅЌ‘ќЅухгалтерска€ќпераци€"> лючевые—войстваЅЌ‘ќЅухгалтерска€ќпераци€</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;Ќомер</td><td align=left><A href="#т_00000000883">“ипЌомерƒокумента</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ќрганизаци€</td><td align=left><A href="#т_ лючевые—войстваќрганизаци€"> лючевые—войстваќрганизаци€</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;√оловна€ќрганизаци€</td><td align=left><A href="#т_ лючевые—войстваќрганизаци€"> лючевые—войстваќрганизаци€</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»ЌЌ</td><td align=left><A href="#т_string">string (12)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ѕѕ</td><td align=left><A href="#т_string">string (9)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</td><td align=left><A href="#т_string">string</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименованиеѕолное</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование—окращенное</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;–егистраци€¬Ќалоговомќргане</td><td align=left><A href="#т_ лючевые—войства–егистраци€¬Ќалоговомќргане"> лючевые—войства–егистраци€¬Ќалоговомќргане</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ѕѕ</td><td align=left><A href="#т_string">string (9)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименованиеќбособленногоѕодразделени€</td><td align=left><A href="#т_string">string</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ќ ј“ќ</td><td align=left><A href="#т_string">string (11)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000862">—правочник—сылка.–егистрации¬Ќалоговомќргане</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;÷ифровой»ндексќбособленногоѕодразделени€</td><td align=left><A href="#т_int">int (5)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000859">—правочник—сылка.ќрганизации</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ёридическое‘изическоеЋицо</td><td align=left><A href="#т_00000000892">ёридическое‘изическоеЋицо</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000001298">ƒокумент—сылка.ЅЌ‘ќЅухгалтерска€ќпераци€</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>ќтветственный</td><td align=left><A href="#т_ лючевые—войстваѕользователь"> лючевые—войстваѕользователь</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</td><td align=left><A href="#т_string">string</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000861">—правочник—сылка.ѕользователи</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;‘изическоеЋицо</td><td align=left><A href="#т_ лючевые—войства‘изическоеЋицо"> лючевые—войства‘изическоеЋицо</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ƒата–ождени€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»ЌЌ</td><td align=left><A href="#т_string">string (12)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; од¬ѕрограмме</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000872">—правочник—сылка.‘изическиеЋица</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;‘»ќ</td><td align=left><A href="#т_string">string</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—умма</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>ƒата—ѕќƒ</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—ѕќƒ</td><td align=left><A href="#т_boolean">boolean</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—одержание</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left> омментарий</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>ѕризнакƒоверительного”правлени€</td><td align=left><A href="#т_00000001361">ЅЌ‘ќѕризнакиƒоверительного”правлени€</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>¬идƒе€тельностиЌѕ‘</td><td align=left><A href="#т_00000001360">ЅЌ‘ќ¬идыƒе€тельностиЌѕ‘</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+</table><BR>
+
+<TABLE id=table3 class=withBorder cellSpacing=0 cellPadding=3 width=800 border=0>
+<thead><b> “абличные части </b></thead> 
+<tr BGCOLOR=lightgrey><td> —войства</td><td> “ип значени€</td><td> ѕо€снение</td></tr>
+<tr >
+	<td align=left>ЅЌ‘ќЅухгалтерские«аписи</td><td align=left>ЅЌ‘ќЅухгалтерские«аписи</td><td align=left>&nbsp;</td></tr>
+</table><BR>
+
+<TABLE id=table3 class=withBorder cellSpacing=0 cellPadding=3 width=800 border=0>
+<thead><b> “аблична€ часть: ЅЌ‘ќЅухгалтерские«аписи </b></thead> 
+<tr BGCOLOR=lightgrey><td> —войства</td><td> “ип значени€</td><td> ќб€зательный</td><td> ѕо€снение</td></tr>
+<tr >
+	<td align=left>ѕериод</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—четƒт</td><td align=left><A href="#т_ лючевые—войстваЅЌ‘ќЅанковский"> лючевые—войстваЅЌ‘ќЅанковский</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp; од</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—чет т</td><td align=left><A href="#т_ лючевые—войстваЅЌ‘ќЅанковский"> лючевые—войстваЅЌ‘ќЅанковский</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp; од</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—четјналитического”четаƒт</td><td align=left><A href="#т_ лючевые—войстваЅЌ‘ќ—четајналитического”чета"> лючевые—войстваЅЌ‘ќ—четајналитического”чета</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;¬алюта</td><td align=left><A href="#т_ лючевые—войства¬алюта"> лючевые—войства¬алюта</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; од</td><td align=left><A href="#т_string">string (3)</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</td><td align=left><A href="#т_string">string</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000847">—правочник—сылка.¬алюты</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp; од</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ќрганизаци€</td><td align=left><A href="#т_ лючевые—войстваќрганизаци€"> лючевые—войстваќрганизаци€</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;√оловна€ќрганизаци€</td><td align=left><A href="#т_ лючевые—войстваќрганизаци€"> лючевые—войстваќрганизаци€</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»ЌЌ</td><td align=left><A href="#т_string">string (12)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ѕѕ</td><td align=left><A href="#т_string">string (9)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</td><td align=left><A href="#т_string">string</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименованиеѕолное</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование—окращенное</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;–егистраци€¬Ќалоговомќргане</td><td align=left><A href="#т_ лючевые—войства–егистраци€¬Ќалоговомќргане"> лючевые—войства–егистраци€¬Ќалоговомќргане</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ѕѕ</td><td align=left><A href="#т_string">string (9)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименованиеќбособленногоѕодразделени€</td><td align=left><A href="#т_string">string</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ќ ј“ќ</td><td align=left><A href="#т_string">string (11)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000862">—правочник—сылка.–егистрации¬Ќалоговомќргане</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;÷ифровой»ндексќбособленногоѕодразделени€</td><td align=left><A href="#т_int">int (5)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000859">—правочник—сылка.ќрганизации</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ёридическое‘изическоеЋицо</td><td align=left><A href="#т_00000000892">ёридическое‘изическоеЋицо</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000001482">—правочник—сылка.ЅЌ‘ќ—четајналитического”чета</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—четјналитического”чета т</td><td align=left><A href="#т_ лючевые—войстваЅЌ‘ќ—четајналитического”чета"> лючевые—войстваЅЌ‘ќ—четајналитического”чета</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;¬алюта</td><td align=left><A href="#т_ лючевые—войства¬алюта"> лючевые—войства¬алюта</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; од</td><td align=left><A href="#т_string">string (3)</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</td><td align=left><A href="#т_string">string</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000847">—правочник—сылка.¬алюты</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp; од</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ќрганизаци€</td><td align=left><A href="#т_ лючевые—войстваќрганизаци€"> лючевые—войстваќрганизаци€</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;√оловна€ќрганизаци€</td><td align=left><A href="#т_ лючевые—войстваќрганизаци€"> лючевые—войстваќрганизаци€</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»ЌЌ</td><td align=left><A href="#т_string">string (12)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ѕѕ</td><td align=left><A href="#т_string">string (9)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</td><td align=left><A href="#т_string">string</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименованиеѕолное</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование—окращенное</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;–егистраци€¬Ќалоговомќргане</td><td align=left><A href="#т_ лючевые—войства–егистраци€¬Ќалоговомќргане"> лючевые—войства–егистраци€¬Ќалоговомќргане</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ѕѕ</td><td align=left><A href="#т_string">string (9)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименованиеќбособленногоѕодразделени€</td><td align=left><A href="#т_string">string</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ќ ј“ќ</td><td align=left><A href="#т_string">string (11)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000862">—правочник—сылка.–егистрации¬Ќалоговомќргане</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;÷ифровой»ндексќбособленногоѕодразделени€</td><td align=left><A href="#т_int">int (5)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000859">—правочник—сылка.ќрганизации</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ёридическое‘изическоеЋицо</td><td align=left><A href="#т_00000000892">ёридическое‘изическоеЋицо</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000001482">—правочник—сылка.ЅЌ‘ќ—четајналитического”чета</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>ќрганизаци€</td><td align=left><A href="#т_ лючевые—войстваќрганизаци€"> лючевые—войстваќрганизаци€</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;√оловна€ќрганизаци€</td><td align=left><A href="#т_ лючевые—войстваќрганизаци€"> лючевые—войстваќрганизаци€</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»ЌЌ</td><td align=left><A href="#т_string">string (12)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp; ѕѕ</td><td align=left><A href="#т_string">string (9)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</td><td align=left><A href="#т_string">string</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;Ќаименованиеѕолное</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование—окращенное</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;–егистраци€¬Ќалоговомќргане</td><td align=left><A href="#т_ лючевые—войства–егистраци€¬Ќалоговомќргане"> лючевые—войства–егистраци€¬Ќалоговомќргане</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ѕѕ</td><td align=left><A href="#т_string">string (9)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименованиеќбособленногоѕодразделени€</td><td align=left><A href="#т_string">string</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ќ ј“ќ</td><td align=left><A href="#т_string">string (11)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000862">—правочник—сылка.–егистрации¬Ќалоговомќргане</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;÷ифровой»ндексќбособленногоѕодразделени€</td><td align=left><A href="#т_int">int (5)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000859">—правочник—сылка.ќрганизации</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ёридическое‘изическоеЋицо</td><td align=left><A href="#т_00000000892">ёридическое‘изическоеЋицо</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—умма</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—умма¬–ƒт</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—умма¬– т</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—уммаѕ–ƒт</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—уммаѕ– т</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—уммаЌ”ƒт</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—уммаЌ” т</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>¬алютна€—уммаƒт</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>¬алютна€—умма т</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>¬алютаƒт</td><td align=left><A href="#т_ лючевые—войства¬алюта"> лючевые—войства¬алюта</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp; од</td><td align=left><A href="#т_string">string (3)</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</td><td align=left><A href="#т_string">string</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000847">—правочник—сылка.¬алюты</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>¬алюта т</td><td align=left><A href="#т_ лючевые—войства¬алюта"> лючевые—войства¬алюта</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp; од</td><td align=left><A href="#т_string">string (3)</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</td><td align=left><A href="#т_string">string</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000847">—правочник—сылка.¬алюты</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—одержание</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>Ќомерћемориальногоќрдера</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left> оличествоƒт</td><td align=left><A href="#т_00000000878">“ип оличество</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left> оличество т</td><td align=left><A href="#т_00000000878">“ип оличество</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>ƒата—ѕќƒ</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—ѕќƒ</td><td align=left><A href="#т_boolean">boolean</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>ќтветственный</td><td align=left><A href="#т_ лючевые—войстваѕользователь"> лючевые—войстваѕользователь</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</td><td align=left><A href="#т_string">string</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000861">—правочник—сылка.ѕользователи</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;‘изическоеЋицо</td><td align=left><A href="#т_ лючевые—войства‘изическоеЋицо"> лючевые—войства‘изическоеЋицо</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ƒата–ождени€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»ЌЌ</td><td align=left><A href="#т_string">string (12)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; од¬ѕрограмме</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000872">—правочник—сылка.‘изическиеЋица</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;‘»ќ</td><td align=left><A href="#т_string">string</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—убконтоƒт1</td><td align=left><A href="#т_00000001297">ЅЌ‘ќ¬идЅухгалтерскойјналитики</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—убконтоƒт2</td><td align=left><A href="#т_00000001297">ЅЌ‘ќ¬идЅухгалтерскойјналитики</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—убконтоƒт3</td><td align=left><A href="#т_00000001297">ЅЌ‘ќ¬идЅухгалтерскойјналитики</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—убконто т1</td><td align=left><A href="#т_00000001297">ЅЌ‘ќ¬идЅухгалтерскойјналитики</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—убконто т2</td><td align=left><A href="#т_00000001297">ЅЌ‘ќ¬идЅухгалтерскойјналитики</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—убконто т3</td><td align=left><A href="#т_00000001297">ЅЌ‘ќ¬идЅухгалтерскойјналитики</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>¬ид—убконтоƒт1</td><td align=left><A href="#т_ лючевые—войстваЅЌ‘ќ¬иды—убконтоЅанковские"> лючевые—войстваЅЌ‘ќ¬иды—убконтоЅанковские</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»дентификатор</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>¬ид—убконтоƒт2</td><td align=left><A href="#т_ лючевые—войстваЅЌ‘ќ¬иды—убконтоЅанковские"> лючевые—войстваЅЌ‘ќ¬иды—убконтоЅанковские</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»дентификатор</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>¬ид—убконтоƒт3</td><td align=left><A href="#т_ лючевые—войстваЅЌ‘ќ¬иды—убконтоЅанковские"> лючевые—войстваЅЌ‘ќ¬иды—убконтоЅанковские</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»дентификатор</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>¬ид—убконто т1</td><td align=left><A href="#т_ лючевые—войстваЅЌ‘ќ¬иды—убконтоЅанковские"> лючевые—войстваЅЌ‘ќ¬иды—убконтоЅанковские</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»дентификатор</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>¬ид—убконто т2</td><td align=left><A href="#т_ лючевые—войстваЅЌ‘ќ¬иды—убконтоЅанковские"> лючевые—войстваЅЌ‘ќ¬иды—убконтоЅанковские</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»дентификатор</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>¬ид—убконто т3</td><td align=left><A href="#т_ лючевые—войстваЅЌ‘ќ¬иды—убконтоЅанковские"> лючевые—войстваЅЌ‘ќ¬иды—убконтоЅанковские</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»дентификатор</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—имволќ‘–ƒт</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—имволќ‘– т</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>ѕортфель</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+</table><BR>
+
 <H2><A name=00000000273>‘ормы Ќѕќ</A></H2>
 <H2><A name=00000000274>‘ормы первичных учетных документов дл€ отражени€ поступивших взносов по договорам Ќѕќ†††</A></H2>
 <H3><A name=00000000278>‘орма є »—ѕј-01 “Ё ёЋ</A></H3>
@@ -170,7 +498,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -234,6 +562,8 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ID</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
+	<td align=left>“ипƒоговора</td><td align=left><A href="#т_00000000905">Ќѕ‘Ѕ“ипыƒоговоровЌѕќ</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
 	<td align=left>”полномоченноеѕодразделение¬кладчика</td><td align=left><A href="#т_ лючевые—войстваЌѕ‘Ѕѕодразделени€ онтрагентов"> лючевые—войстваЌѕ‘Ѕѕодразделени€ онтрагентов</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ID</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
@@ -268,7 +598,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -332,6 +662,8 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ID</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
+	<td align=left>“ипƒоговора</td><td align=left><A href="#т_00000000905">Ќѕ‘Ѕ“ипыƒоговоровЌѕќ</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
 	<td align=left>”полномоченноеѕодразделение¬кладчика</td><td align=left><A href="#т_ лючевые—войстваЌѕ‘Ѕѕодразделени€ онтрагентов"> лючевые—войстваЌѕ‘Ѕѕодразделени€ онтрагентов</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ID</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
@@ -366,7 +698,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -430,6 +762,8 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ID</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
+	<td align=left>“ипƒоговора</td><td align=left><A href="#т_00000000905">Ќѕ‘Ѕ“ипыƒоговоровЌѕќ</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
 	<td align=left>”полномоченноеѕодразделение¬кладчика</td><td align=left><A href="#т_ лючевые—войстваЌѕ‘Ѕѕодразделени€ онтрагентов"> лючевые—войстваЌѕ‘Ѕѕодразделени€ онтрагентов</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ID</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
@@ -464,7 +798,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -528,6 +862,8 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ID</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
+	<td align=left>“ипƒоговора</td><td align=left><A href="#т_00000000905">Ќѕ‘Ѕ“ипыƒоговоровЌѕќ</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
 	<td align=left>”полномоченноеѕодразделение¬кладчика</td><td align=left><A href="#т_ лючевые—войстваЌѕ‘Ѕѕодразделени€ онтрагентов"> лючевые—войстваЌѕ‘Ѕѕодразделени€ онтрагентов</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ID</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
@@ -562,7 +898,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -654,7 +990,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -746,7 +1082,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -850,7 +1186,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -956,7 +1292,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -1038,7 +1374,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -1103,6 +1439,8 @@
 	<td align=left>–аспор€жениеѕриказ‘онда–ешениеƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>—уммаЌаправленна€¬–езервѕокрыти€ѕенсионныхќб€зательств»з—трахового–езерва</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—умма орректировки—трахового–езерваЌа—умму»спользованного—трахового–езерва</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 </table><BR>
 
 <H3><A name=00000000308>‘орма є »—ѕј-104</A></H3>
@@ -1120,7 +1458,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -1184,6 +1522,8 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ID</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
+	<td align=left>“ипƒоговора</td><td align=left><A href="#т_00000000905">Ќѕ‘Ѕ“ипыƒоговоровЌѕќ</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
 	<td align=left>ƒата»дентификации</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>ƒокументќснованиеЌомер</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
@@ -1216,7 +1556,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -1308,7 +1648,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -1372,9 +1712,13 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ID</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
+	<td align=left>“ипƒоговораƒо»зменени€</td><td align=left><A href="#т_00000000905">Ќѕ‘Ѕ“ипыƒоговоровЌѕќ</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
 	<td align=left>”полномоченноеѕодразделение¬кладчикаƒо»зменени€</td><td align=left><A href="#т_ лючевые—войстваЌѕ‘Ѕѕодразделени€ онтрагентов"> лючевые—войстваЌѕ‘Ѕѕодразделени€ онтрагентов</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ID</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>“ипѕенсионного¬зносаƒо»зменени€</td><td align=left><A href="#т_00000000904">Ќѕ‘Ѕ“ипы¬зносовЌѕќ</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>¬кладчикѕосле»зменени€</td><td align=left><A href="#т_ лючевые—войстваЌѕ‘Ѕ онтрагенты"> лючевые—войстваЌѕ‘Ѕ онтрагенты</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -1384,9 +1728,13 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ID</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
+	<td align=left>“ипƒоговораѕосле»зменени€</td><td align=left><A href="#т_00000000905">Ќѕ‘Ѕ“ипыƒоговоровЌѕќ</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
 	<td align=left>”полномоченноеѕодразделение¬кладчикаѕосле»зменени€</td><td align=left><A href="#т_ лючевые—войстваЌѕ‘Ѕѕодразделени€ онтрагентов"> лючевые—войстваЌѕ‘Ѕѕодразделени€ онтрагентов</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ID</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>“ипѕенсионного¬зносаѕосле»зменени€</td><td align=left><A href="#т_00000000904">Ќѕ‘Ѕ“ипы¬зносовЌѕќ</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>ƒокументќснованиеЌомер</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -1410,7 +1758,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -1474,6 +1822,8 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ID</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
+	<td align=left>“ипƒоговора</td><td align=left><A href="#т_00000000905">Ќѕ‘Ѕ“ипыƒоговоровЌѕќ</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
 	<td align=left>”полномоченноеѕодразделение¬кладчика</td><td align=left><A href="#т_ лючевые—войстваЌѕ‘Ѕѕодразделени€ онтрагентов"> лючевые—войстваЌѕ‘Ѕѕодразделени€ онтрагентов</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ID</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
@@ -1498,7 +1848,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -1562,6 +1912,8 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ID</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
+	<td align=left>“ипƒоговора</td><td align=left><A href="#т_00000000905">Ќѕ‘Ѕ“ипыƒоговоровЌѕќ</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
 	<td align=left>“ипѕенсионного¬зноса</td><td align=left><A href="#т_00000000904">Ќѕ‘Ѕ“ипы¬зносовЌѕќ</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>ƒокументќснованиеЌомер</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
@@ -1594,7 +1946,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормы</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -1662,6 +2014,8 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ID</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
+	<td align=left>“ипƒоговора</td><td align=left><A href="#т_00000000905">Ќѕ‘Ѕ“ипыƒоговоровЌѕќ</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
 	<td align=left>”полномоченноеѕодразделение¬кладчика</td><td align=left><A href="#т_ лючевые—войстваЌѕ‘Ѕѕодразделени€ онтрагентов"> лючевые—войстваЌѕ‘Ѕѕодразделени€ онтрагентов</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ID</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
@@ -1689,7 +2043,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -1771,6 +2125,10 @@
 <tr >
 	<td align=left>—умма«а”слугиѕочты¬“„ѕлата«аѕеревод»ƒоставка2</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
+	<td align=left>—умма«а”слугиѕочты¬“„ѕлата«аѕеревод»ƒоставка3</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—умма«а”слугиѕочты¬“„ѕлата«аѕеревод»ƒоставка4</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
 	<td align=left>“ипƒоговора</td><td align=left><A href="#т_00000000905">Ќѕ‘Ѕ“ипыƒоговоровЌѕќ</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>Ќомерѕенсионной—хемы</td><td align=left><A href="#т_ лючевые—войстваЌѕ‘ЅЌомераѕенсионных—хем"> лючевые—войстваЌѕ‘ЅЌомераѕенсионных—хем</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
@@ -1793,7 +2151,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -1889,7 +2247,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -1991,7 +2349,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -2105,7 +2463,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -2221,7 +2579,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -2321,7 +2679,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -2423,7 +2781,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -2537,7 +2895,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -2619,7 +2977,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -2723,7 +3081,9 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормы</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -2805,7 +3165,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -2915,7 +3275,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -3020,7 +3380,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -3112,7 +3472,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -3192,7 +3552,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -3282,7 +3642,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -3361,7 +3721,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -3437,7 +3797,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -3523,7 +3883,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -3607,7 +3967,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -3685,7 +4045,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -3780,7 +4140,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -3870,7 +4230,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -3960,7 +4320,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -4044,7 +4404,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -4129,7 +4489,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -4217,7 +4577,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -4303,7 +4663,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -4391,7 +4751,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -4481,7 +4841,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -4571,7 +4931,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -4657,7 +5017,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -4725,8 +5085,6 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ID</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>¬ид лиента</td><td align=left><A href="#т_00000000904">Ќѕ‘Ѕ“ипы¬зносовЌѕќ</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
-<tr >
 	<td align=left>—уммаЌеразнесенныхѕенс¬зносовƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 </table><BR>
 
@@ -4745,7 +5103,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -4805,16 +5163,6 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp; од“ранзакции</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>¬кладчик</td><td align=left><A href="#т_ лючевые—войстваЌѕ‘Ѕ онтрагенты"> лючевые—войстваЌѕ‘Ѕ онтрагенты</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
-<tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ID</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
-<tr >
-	<td align=left>ƒоговорЌѕќ</td><td align=left><A href="#т_ лючевые—войстваЌѕ‘Ѕƒоговоры онтрагентов"> лючевые—войстваЌѕ‘Ѕƒоговоры онтрагентов</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
-<tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ID</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
-<tr >
-	<td align=left>¬ид лиента</td><td align=left><A href="#т_00000000904">Ќѕ‘Ѕ“ипы¬зносовЌѕќ</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
-<tr >
 	<td align=left>—уммаЌеразнесенныхѕенс¬зносовƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 </table><BR>
 
@@ -4834,7 +5182,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -4908,6 +5256,10 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ID</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
+	<td align=left>”полномоченноеѕодразделение¬кладчика</td><td align=left><A href="#т_ лючевые—войстваЌѕ‘Ѕѕодразделени€ онтрагентов"> лючевые—войстваЌѕ‘Ѕѕодразделени€ онтрагентов</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ID</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
 	<td align=left>—умма«ачисленныхѕенс¬зносовƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 </table><BR>
 
@@ -4931,7 +5283,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -5028,7 +5380,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -5112,7 +5464,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -5166,11 +5518,49 @@
 <thead><b> “аблична€ часть: “аблична€„асть </b></thead> 
 <tr BGCOLOR=lightgrey><td> —войства</td><td> “ип значени€</td><td> ќб€зательный</td><td> ѕо€снение</td></tr>
 <tr >
-	<td align=left>Ќомер—трокиƒокумента</td><td align=left><A href="#т_00000000884">“ипЌомер—троки</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>ѕоступлениеѕенсионных¬зносов‘изическихЋицƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>Ќаименованиеќперации</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>ѕризнаниеѕенсионного¬зноса‘изическогоЋицаќшибочнымƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>ƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>ѕоступлениеѕенсионных¬зносовёридическихЋицƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>ѕризнаниеѕенсионного¬зносаёридическогоЋицаќшибочнымƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>ѕоступление÷елевых¬зносовƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>ѕризнание÷елевого¬зносаќшибочнымƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>ѕоступлениеќшибочных¬зносовƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>Ќачисление÷елевых¬зносовƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>„астьѕенсионных¬зносовЌаќ”ƒƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>»дентификаци€÷елевых¬знсоовƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>»дентификаци€ѕенсионных¬зносов‘изическихЋицƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>»дентификаци€ѕенсионных¬зносовёридическихЋицƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—умма¬зносовѕодлежаща€ѕереводу—‘изическихЌаёридическихЋицƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—умма¬зносовѕодлежаща€ѕереводу—ёридическихЌа‘изическихЋицƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>«ачисление¬зносов‘изическихЋиц¬–ѕѕќѕо—траховымƒоговорамƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>«ачисление¬зносов‘изическихЋиц¬–ѕѕќѕо»нвестиционнымƒоговорамƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>«ачисление¬зносовёридическихЋиц¬–ѕѕќѕо—траховымƒоговорамƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>«ачисление¬зносовёридическихЋиц¬–ѕѕќѕо»нвестиционнымƒоговорамƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—уммаѕо—траховымƒоговорамЌаправленна€¬—траховой–езервƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—уммаѕо»нвестиционнымƒоговорамЌаправленна€¬—траховой–езервƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—умма»спользовани€—трахового–езерва¬–ѕѕќѕо—траховымƒоговорамƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—умма»спользовани€—трахового–езерва¬–ѕѕќѕо»нвестиционнымƒоговорамƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 </table><BR>
 
 <H3><A name=00000000441>‘орма є ј-102–ѕѕќ</A></H3>
@@ -5188,7 +5578,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -5242,8 +5632,6 @@
 <thead><b> “аблична€ часть: “аблична€„асть </b></thead> 
 <tr BGCOLOR=lightgrey><td> —войства</td><td> “ип значени€</td><td> ќб€зательный</td><td> ѕо€снение</td></tr>
 <tr >
-	<td align=left>Ќомер—трокиƒокумента</td><td align=left><A href="#т_00000000884">“ипЌомер—троки</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
-<tr >
 	<td align=left>“ипƒоговора</td><td align=left><A href="#т_00000000905">Ќѕ‘Ѕ“ипыƒоговоровЌѕќ</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>Ќомерѕенсионной—хемы</td><td align=left><A href="#т_ лючевые—войстваЌѕ‘ЅЌомераѕенсионных—хем"> лючевые—войстваЌѕ‘ЅЌомераѕенсионных—хем</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
@@ -5252,11 +5640,31 @@
 <tr >
 	<td align=left>ёридическое‘изическоеЋицо</td><td align=left><A href="#т_00000000892">ёридическое‘изическоеЋицо</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>Ќаименованиеќперации</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>ќстаток–ѕѕќЌаЌачалоѕериодаƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>Ќомерѕоказател€</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>ƒанныеѕоƒоначислениюѕенсионных¬зносовЌаЌачалоѕериодаƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>ѕоƒаннымѕерсонифицированного”чета</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>ќстаток–ѕѕќЌа онецѕериодаƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>ƒанныеѕоƒоначислениюѕенсионных¬зносовЌа онецѕериодаƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>ѕоступилоѕенсионных¬зносов«аѕериодƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—редстваЌаправленныеЌа”величение–ѕѕќ«а—чет—редств—трахового–езерваƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>÷елевые—редстваЌаправленныеЌа‘ормирование–ѕѕќƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>ƒоходќт–азмещени€ѕенсионных–езервовЌаправленныйЌаѕополнение–ѕѕќƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>¬ыплачено»зѕенсионных–езервовƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>¬ыплатыѕенсийƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>¬ыплаты¬ыкупных—уммЌаследникамЅлагоприобретател€мƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>ќстаткиƒенежных—редствЌаѕенсионных—четахѕослеѕрекращени€ќб€зательствƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>»зменениеѕенсионной—хемы¬—оответствии—ƒоговоромЌѕќƒанные—ѕј</td><td align=left><A href="#т_00000000885">“ип—умма</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 </table><BR>
 
 <H3><A name=00000000444>‘орма є ј-102—–</A></H3>
@@ -5274,7 +5682,7 @@
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</td><td align=left><A href="#т_dateTime">dateTime</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -5463,7 +5871,215 @@
 	<td align=left>ƒополнительные–еквизиты</td><td align=left>ƒополнительные–еквизиты</td><td align=left>&nbsp;</td></tr>
 </table><BR>
 
-<H3><A name=00000000456>—правочник " онтрагенты"</A></H3>
+<H3><A name=00000000463>—правочник " онтрагенты"</A></H3>
+<P><B>—правочник. онтрагенты</B></P>
+<TABLE id=table3 class=withBorder cellSpacing=0 cellPadding=3 width=800 border=0>
+<thead><b> Ўапка </b></thead> 
+<tr BGCOLOR=lightgrey><td> —войства</td><td> “ип значени€</td><td> ќб€зательный</td><td> ѕо€снение</td></tr>
+<tr >
+	<td align=left> лючевые—войства</td><td align=left><A href="#т_ лючевые—войства онтрагент"> лючевые—войства онтрагент</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»ЌЌ</td><td align=left><A href="#т_string">string (12)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp; ѕѕ</td><td align=left><A href="#т_string">string (9)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;Ќаименованиеѕолное</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000855">—правочник—сылка. онтрагенты</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ёридическое‘изическоеЋицо</td><td align=left><A href="#т_00000000892">ёридическое‘изическоеЋицо</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>√руппа</td><td align=left><A href="#т_ лючевые—войства онтрагент√руппа"> лючевые—войства онтрагент√руппа</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;√руппа</td><td align=left><A href="#т_ лючевые—войства онтрагент√руппа"> лючевые—войства онтрагент√руппа</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</td><td align=left><A href="#т_string">string</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000856">—правочник—сылка. онтрагенты√руппа</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>ќ ѕќ</td><td align=left><A href="#т_string">string (10)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>ƒополнительна€»нформаци€</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>ƒокумент”дЋичность</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—трана–егистрации</td><td align=left><A href="#т_ лючевые—войства—транаћира"> лючевые—войства—транаћира</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp; од</td><td align=left><A href="#т_string">string</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</td><td align=left><A href="#т_string">string</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000868">—правочник—сылка.—траныћира</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>–егистрационныйЌомерЌерезидента</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>ЌалоговыйЌомерЌерезидента</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>√оловной онтрагент</td><td align=left><A href="#т_ лючевые—войства онтрагент"> лючевые—войства онтрагент</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;»ЌЌ</td><td align=left><A href="#т_string">string (12)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp; ѕѕ</td><td align=left><A href="#т_string">string (9)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;Ќаименованиеѕолное</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000855">—правочник—сылка. онтрагенты</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ёридическое‘изическоеЋицо</td><td align=left><A href="#т_00000000892">ёридическое‘изическоеЋицо</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>ќбособленноеѕодразделение</td><td align=left><A href="#т_boolean">boolean</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+</table><BR>
+
+<TABLE id=table3 class=withBorder cellSpacing=0 cellPadding=3 width=800 border=0>
+<thead><b> “абличные части </b></thead> 
+<tr BGCOLOR=lightgrey><td> —войства</td><td> “ип значени€</td><td> ѕо€снение</td></tr>
+<tr >
+	<td align=left> онтактна€»нформаци€</td><td align=left> онтактна€»нформаци€</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>ƒополнительные–еквизиты</td><td align=left>ƒополнительные–еквизиты</td><td align=left>&nbsp;</td></tr>
+</table><BR>
+
+<TABLE id=table3 class=withBorder cellSpacing=0 cellPadding=3 width=800 border=0>
+<thead><b> “аблична€ часть:  онтактна€»нформаци€ </b></thead> 
+<tr BGCOLOR=lightgrey><td> —войства</td><td> “ип значени€</td><td> ќб€зательный</td><td> ѕо€снение</td></tr>
+<tr >
+	<td align=left>¬ид онтактной»нформации</td><td align=left><A href="#т_00000000722">¬иды »</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>«начени€ѕолей</td><td align=left><A href="#т_string">string</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>Ќаименование онтактной»нформации</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+</table><BR>
+
+<H3><A name=00000000462>—правочник "ƒоговоры контрагентов"</A></H3>
+<P><B>—правочник.ƒоговоры</B></P>
+<TABLE id=table3 class=withBorder cellSpacing=0 cellPadding=3 width=800 border=0>
+<thead><b> Ўапка </b></thead> 
+<tr BGCOLOR=lightgrey><td> —войства</td><td> “ип значени€</td><td> ќб€зательный</td><td> ѕо€снение</td></tr>
+<tr >
+	<td align=left> лючевые—войства</td><td align=left><A href="#т_ лючевые—войстваƒоговор"> лючевые—войстваƒоговор</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;¬алюта¬заиморасчетов</td><td align=left><A href="#т_ лючевые—войства¬алюта"> лючевые—войства¬алюта</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; од</td><td align=left><A href="#т_string">string (3)</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</td><td align=left><A href="#т_string">string</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000847">—правочник—сылка.¬алюты</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;¬идƒоговора</td><td align=left><A href="#т_00000000721">¬идыƒоговоров</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ƒата</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp; онтрагент</td><td align=left><A href="#т_ лючевые—войства онтрагент"> лючевые—войства онтрагент</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»ЌЌ</td><td align=left><A href="#т_string">string (12)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ѕѕ</td><td align=left><A href="#т_string">string (9)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименованиеѕолное</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000855">—правочник—сылка. онтрагенты</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ёридическое‘изическоеЋицо</td><td align=left><A href="#т_00000000892">ёридическое‘изическоеЋицо</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;Ќомер</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;ќрганизаци€</td><td align=left><A href="#т_ лючевые—войстваќрганизаци€"> лючевые—войстваќрганизаци€</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;√оловна€ќрганизаци€</td><td align=left><A href="#т_ лючевые—войстваќрганизаци€"> лючевые—войстваќрганизаци€</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»ЌЌ</td><td align=left><A href="#т_string">string (12)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ѕѕ</td><td align=left><A href="#т_string">string (9)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</td><td align=left><A href="#т_string">string</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименованиеѕолное</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование—окращенное</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;–егистраци€¬Ќалоговомќргане</td><td align=left><A href="#т_ лючевые—войства–егистраци€¬Ќалоговомќргане"> лючевые—войства–егистраци€¬Ќалоговомќргане</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ѕѕ</td><td align=left><A href="#т_string">string (9)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименованиеќбособленногоѕодразделени€</td><td align=left><A href="#т_string">string</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ќ ј“ќ</td><td align=left><A href="#т_string">string (11)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000862">—правочник—сылка.–егистрации¬Ќалоговомќргане</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;÷ифровой»ндексќбособленногоѕодразделени€</td><td align=left><A href="#т_int">int (5)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000859">—правочник—сылка.ќрганизации</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ёридическое‘изическоеЋицо</td><td align=left><A href="#т_00000000892">ёридическое‘изическоеЋицо</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;–асчеты¬”словных≈диницах</td><td align=left><A href="#т_boolean">boolean</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000851">—правочник—сылка.ƒоговоры</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>—рокƒействи€</td><td align=left><A href="#т_date">date</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>”четјгентскогоЌƒ—</td><td align=left><A href="#т_boolean">boolean</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left> омментарий</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>√руппаЌастроек‘инансового”чета–асчетов</td><td align=left><A href="#т_ лючевые—войства√руппаЌастроек‘инансового”чета–асчетов"> лючевые—войства√руппаЌастроек‘инансового”чета–асчетов</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000849">—правочник—сылка.√руппыЌастроек‘инансового”чета–асчетов</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>Ѕанковский—чет</td><td align=left><A href="#т_ лючевые—войстваЅанковский—чет"> лючевые—войстваЅанковский—чет</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;Ѕанк</td><td align=left><A href="#т_ лючевые—войстваЅанк"> лючевые—войстваЅанк</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ѕ» </td><td align=left><A href="#т_string">string (9)</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; орр—чет</td><td align=left><A href="#т_string">string (20)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000845">—правочник—сылка.Ѕанки</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;Ѕанкƒл€–асчетов</td><td align=left><A href="#т_ лючевые—войстваЅанк"> лючевые—войстваЅанк</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ѕ» </td><td align=left><A href="#т_string">string (9)</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; орр—чет</td><td align=left><A href="#т_string">string (20)</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</td><td align=left><A href="#т_string">string</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000845">—правочник—сылка.Ѕанки</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;¬ладелец</td><td align=left><A href="#т_ лючевые—войства онтрагент"> лючевые—войства онтрагент</A><BR>
+<A href="#т_ лючевые—войстваќрганизаци€"> лючевые—войстваќрганизаци€</A><BR>
+<A href="#т_ лючевые—войства‘изическоеЋицо"> лючевые—войства‘изическоеЋицо</A><BR>
+</td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;Ќомер—чета</td><td align=left><A href="#т_string">string (34)</A></td><td align=left>ƒа</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;—сылка</td><td align=left><A href="#т_00000000846">—правочник—сылка.Ѕанковские—чета</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left>ЅЌ‘ќ лассƒепозита–азмещенных—редств</td><td align=left><A href="#т_00000001479">ЅЌ‘ќ лассыƒепозитов–азмещенных—редств</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
+</table><BR>
+
+<TABLE id=table3 class=withBorder cellSpacing=0 cellPadding=3 width=800 border=0>
+<thead><b> “абличные части </b></thead> 
+<tr BGCOLOR=lightgrey><td> —войства</td><td> “ип значени€</td><td> ѕо€снение</td></tr>
+<tr >
+	<td align=left>ƒополнительные–еквизиты</td><td align=left>ƒополнительные–еквизиты</td><td align=left>&nbsp;</td></tr>
+</table><BR>
+
+<H3><A name=00000000456>—правочник " онтрагенты" (дл€ интеграции Ќѕќ)</A></H3>
 <P><B>—правочник.Ќѕ‘Ѕ онтрагенты</B></P>
 <TABLE id=table3 class=withBorder cellSpacing=0 cellPadding=3 width=800 border=0>
 <thead><b> Ўапка </b></thead> 
@@ -5483,7 +6099,7 @@
 	<td align=left>ƒополнительные–еквизиты</td><td align=left>ƒополнительные–еквизиты</td><td align=left>&nbsp;</td></tr>
 </table><BR>
 
-<H3><A name=00000000454>—правочник "ƒоговоры контрагентов"</A></H3>
+<H3><A name=00000000454>—правочник "ƒоговоры контрагентов" (дл€ интеграции Ќѕќ)</A></H3>
 <P><B>—правочник.Ќѕ‘Ѕƒоговоры онтрагентов</B></P>
 <TABLE id=table3 class=withBorder cellSpacing=0 cellPadding=3 width=800 border=0>
 <thead><b> Ўапка </b></thead> 
@@ -5560,6 +6176,8 @@
 <thead><b> http://www.w3.org/2001/XMLSchema </b></thead> 
 <tr BGCOLOR=lightgrey><td> »м€ типа</td></tr>
 <tr >
+	<td align=left><A name="т_boolean">boolean</A></td></tr>
+<tr >
 	<td align=left><A name="т_date">date</A></td></tr>
 <tr >
 	<td align=left><A name="т_dateTime">dateTime</A></td></tr>
@@ -5590,21 +6208,6 @@
 “реть€<br>
 „етверта€<br>
 Ўеста€<br></td></tr>
-<tr >
-	<td align=left><A name="т_00000001297">ЅЌ‘ќ¬идЅухгалтерскойјналитики</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
-<tr >
-	<td align=left><A name="т_00000001288">ЅЌ‘ќ¬иды÷еннойЅумаги</A></td><td align=left>string</td><td align=left>¬озможные значени€:<br>
-јкции»√<br>
-јкцииќбыкновенныејќ<br>
-јкцииѕривилегированныејќ<br>
-¬ексел€<br>
-ќблигации√ос–‘<br>
-ќблигации»√<br>
-ќблигации орп<br>
-ќблигациићун–‘<br>
-ќблигациић‘ќ<br>
-ќблигации–ос’ќ<br>
-ќблигации—уб–‘<br></td></tr>
 <tr >
 	<td align=left><A name="т_00000000717">¬ариантыќтражени€»злишковѕриѕоступлении</A></td><td align=left>string</td><td align=left>¬озможные значени€:<br>
 ¬ѕользуѕоставщика<br>
@@ -5811,6 +6414,8 @@
 <tr >
 	<td align=left><A name="т_00000001301">ƒокумент—сылка.ЅЌ‘ќƒокумент–асчетов— онтрагентом</A></td><td align=left>Ref</td><td align=left>&nbsp;</td></tr>
 <tr >
+	<td align=left><A name="т_00000001599">ƒокумент—сылка.ЅЌ‘ќ«начени€ѕоказателейќтчетности</A></td><td align=left>Ref</td><td align=left>&nbsp;</td></tr>
+<tr >
 	<td align=left><A name="т_00000001299">ƒокумент—сылка.ЅЌ‘ќ—делкаЌ—ќ</A></td><td align=left>Ref</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left><A name="т_00000000752">ƒокумент—сылка.¬озвратƒенежныхƒокументовѕоставщику</A></td><td align=left>Ref</td><td align=left>&nbsp;</td></tr>
@@ -5983,46 +6588,17 @@
 ѕродажаќблагаетс€≈Ќ¬ƒ<br>
 ѕродажаќблагаетс€Ќƒ—<br></td></tr>
 <tr >
-	<td align=left><A name="т_00000000902">Ќƒ‘Ћ—тавкиЌалогообложени€–езидента</A></td><td align=left>string</td><td align=left>¬озможные значени€:<br>
-01<br>
-N<br>
-Y<br>
-Ќерезидент30<br>
-–езидент13<br></td></tr>
+	<td align=left><A name="т_00000000902">Ќƒ‘Ћ—тавкиЌалогообложени€–езидента</A></td><td align=left>string</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left><A name="т_00000000903">Ќѕ‘Ѕ¬идыƒвижени€–езервовЌѕќ</A></td><td align=left>string</td><td align=left>¬озможные значени€:<br>
-ѕенсионные¬зносы_1<br>
-ѕенсионные¬ыплаты_2<br>
-–аспределение–езультата–азмещени€_3<br></td></tr>
+	<td align=left><A name="т_00000000903">Ќѕ‘Ѕ¬идыƒвижени€–езервовЌѕќ</A></td><td align=left>string</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left><A name="т_00000000904">Ќѕ‘Ѕ“ипы¬зносовЌѕќ</A></td><td align=left>string</td><td align=left>¬озможные значени€:<br>
-1<br>
-2<br>
-3<br>
-¬кладчик<br>
-—умма ѕ¬ ¬кладчика<br>
-—умма ѕ¬ ”частника-¬кладчика<br>
-—умма ѕ¬ ‘Ћ<br>
-”ч¬кл<br>
-‘Ћ<br></td></tr>
+	<td align=left><A name="т_00000000904">Ќѕ‘Ѕ“ипы¬зносовЌѕќ</A></td><td align=left>string</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left><A name="т_00000000905">Ќѕ‘Ѕ“ипыƒоговоровЌѕќ</A></td><td align=left>string</td><td align=left>¬озможные значени€:<br>
-01<br>
-02<br>
-1<br>
-2<br>
-»нвестиционный02<br>
-—траховой01<br></td></tr>
+	<td align=left><A name="т_00000000905">Ќѕ‘Ѕ“ипыƒоговоровЌѕќ</A></td><td align=left>string</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left><A name="т_00000000714">ќбщие—войстваƒокументѕоступлени€</A></td><td align=left>&nbsp;</td><td align=left>&nbsp;</td></tr>
 <tr >
-	<td align=left><A name="т_00000001358">ѕериодичностьЌачислени€ѕроцентов</A></td><td align=left>string</td><td align=left>¬озможные значени€:<br>
-¬ онце—рока<br>
-√од<br>
-ƒень<br>
-≈жемес€чно¬ƒень¬клада<br>
- вартал<br>
-ћес€ц<br></td></tr>
+	<td align=left><A name="т_00000001358">ѕериодичностьЌачислени€ѕроцентов</A></td><td align=left>string</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left><A name="т_00000000836">ѕол</A></td><td align=left>string</td><td align=left>¬озможные значени€:<br>
 ∆енский<br>
@@ -6088,11 +6664,21 @@ Y<br>
 <tr >
 	<td align=left><A name="т_00000001291">—правочник—сылка.ЅЌ‘ќ¬ексел€</A></td><td align=left>Ref</td><td align=left>&nbsp;</td></tr>
 <tr >
+	<td align=left><A name="т_00000001480">—правочник—сылка.ЅЌ‘ќ¬идыѕотоковƒенежных—редств</A></td><td align=left>Ref</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left><A name="т_00000001420">—правочник—сылка.ЅЌ‘ќ¬иды÷енныхЅумаг</A></td><td align=left>Ref</td><td align=left>&nbsp;</td></tr>
+<tr >
 	<td align=left><A name="т_00000001292">—правочник—сылка.ЅЌ‘ќƒоговорыƒоверительного”правлени€</A></td><td align=left>Ref</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left><A name="т_00000001481">—правочник—сылка.ЅЌ‘ќƒоговоры редитов»ƒепозитов</A></td><td align=left>Ref</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left><A name="т_00000001293">—правочник—сылка.ЅЌ‘ќќблигации</A></td><td align=left>Ref</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left><A name="т_00000001294">—правочник—сылка.ЅЌ‘ќѕроизводные‘инансовые»нструменты</A></td><td align=left>Ref</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left><A name="т_00000001419">—правочник—сылка.ЅЌ‘ќ—имволыќ‘–</A></td><td align=left>Ref</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left><A name="т_00000001482">—правочник—сылка.ЅЌ‘ќ—четајналитического”чета</A></td><td align=left>Ref</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left><A name="т_00000000847">—правочник—сылка.¬алюты</A></td><td align=left>Ref</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -6131,6 +6717,8 @@ Y<br>
 	<td align=left><A name="т_00000000864">—правочник—сылка.—клады√руппа</A></td><td align=left>Ref</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left><A name="т_00000000865">—правочник—сылка.—татьиƒƒ—</A></td><td align=left>Ref</td><td align=left>&nbsp;</td></tr>
+<tr >
+	<td align=left><A name="т_00000001483">—правочник—сылка.—татьиƒƒ—√руппа</A></td><td align=left>Ref</td><td align=left>&nbsp;</td></tr>
 <tr >
 	<td align=left><A name="т_00000000866">—правочник—сылка.—татьиƒоходов</A></td><td align=left>Ref</td><td align=left>&nbsp;</td></tr>
 <tr >
@@ -6241,6 +6829,236 @@ Y<br>
 <thead><FONT size=2 face=Arial> <b>  лючевые свойства </b></FONT> </thead> 
 <tr BGCOLOR=lightgrey><td> —войство</td><td> “ип</td></tr>
 <tr >
+	<td align=left BGCOLOR=gainsboro><A name="т_ лючевые—войстваЅанк"> лючевые—войстваЅанк</A></td><td align=left BGCOLOR=gainsboro>&nbsp;</td></tr>
+<tr >
+	<td align=left><A name="string (9)">&nbsp;&nbsp;&nbsp;&nbsp;Ѕ» </A></td><td align=left><A href="#т_string (9)">string (9)</A></td></tr>
+<tr >
+	<td align=left><A name="string (20)">&nbsp;&nbsp;&nbsp;&nbsp; орр—чет</A></td><td align=left><A href="#т_string (20)">string (20)</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="—правочник—сылка.Ѕанки">&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_—правочник—сылка.Ѕанки">—правочник—сылка.Ѕанки</A></td></tr>
+<tr >
+	<td align=left BGCOLOR=gainsboro><A name="т_ лючевые—войстваЅанковский—чет"> лючевые—войстваЅанковский—чет</A></td><td align=left BGCOLOR=gainsboro>&nbsp;</td></tr>
+<tr >
+	<td align=left><A name=" лючевые—войстваЅанк">&nbsp;&nbsp;&nbsp;&nbsp;Ѕанк</A></td><td align=left><A href="#т_ лючевые—войстваЅанк"> лючевые—войстваЅанк</A></td></tr>
+<tr >
+	<td align=left><A name="string (9)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ѕ» </A></td><td align=left><A href="#т_string (9)">string (9)</A></td></tr>
+<tr >
+	<td align=left><A name="string (20)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; орр—чет</A></td><td align=left><A href="#т_string (20)">string (20)</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="—правочник—сылка.Ѕанки">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_—правочник—сылка.Ѕанки">—правочник—сылка.Ѕанки</A></td></tr>
+<tr >
+	<td align=left><A name=" лючевые—войстваЅанк">&nbsp;&nbsp;&nbsp;&nbsp;Ѕанкƒл€–асчетов</A></td><td align=left><A href="#т_ лючевые—войстваЅанк"> лючевые—войстваЅанк</A></td></tr>
+<tr >
+	<td align=left><A name="string (9)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ѕ» </A></td><td align=left><A href="#т_string (9)">string (9)</A></td></tr>
+<tr >
+	<td align=left><A name="string (20)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; орр—чет</A></td><td align=left><A href="#т_string (20)">string (20)</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="—правочник—сылка.Ѕанки">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_—правочник—сылка.Ѕанки">—правочник—сылка.Ѕанки</A></td></tr>
+<tr >
+	<td align=left><A name=" лючевые—войства онтрагент; лючевые—войстваќрганизаци€; лючевые—войства‘изическоеЋицо">&nbsp;&nbsp;&nbsp;&nbsp;¬ладелец</A></td><td align=left><A href="#т_ лючевые—войства онтрагент; лючевые—войстваќрганизаци€; лючевые—войства‘изическоеЋицо"> лючевые—войства онтрагент; лючевые—войстваќрганизаци€; лючевые—войства‘изическоеЋицо</A></td></tr>
+<tr >
+	<td align=left><A name="string (34)">&nbsp;&nbsp;&nbsp;&nbsp;Ќомер—чета</A></td><td align=left><A href="#т_string (34)">string (34)</A></td></tr>
+<tr >
+	<td align=left><A name="—правочник—сылка.Ѕанковские—чета">&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_—правочник—сылка.Ѕанковские—чета">—правочник—сылка.Ѕанковские—чета</A></td></tr>
+<tr >
+	<td align=left BGCOLOR=gainsboro><A name="т_ лючевые—войстваЅЌ‘ќЅанковский"> лючевые—войстваЅЌ‘ќЅанковский</A></td><td align=left BGCOLOR=gainsboro>&nbsp;</td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp; од</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left BGCOLOR=gainsboro><A name="т_ лючевые—войстваЅЌ‘ќЅухгалтерска€ќпераци€"> лючевые—войстваЅЌ‘ќЅухгалтерска€ќпераци€</A></td><td align=left BGCOLOR=gainsboro>&nbsp;</td></tr>
+<tr >
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
+<tr >
+	<td align=left><A name="“ипЌомерƒокумента">&nbsp;&nbsp;&nbsp;&nbsp;Ќомер</A></td><td align=left><A href="#т_“ипЌомерƒокумента">“ипЌомерƒокумента</A></td></tr>
+<tr >
+	<td align=left><A name=" лючевые—войстваќрганизаци€">&nbsp;&nbsp;&nbsp;&nbsp;ќрганизаци€</A></td><td align=left><A href="#т_ лючевые—войстваќрганизаци€"> лючевые—войстваќрганизаци€</A></td></tr>
+<tr >
+	<td align=left><A name=" лючевые—войстваќрганизаци€">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;√оловна€ќрганизаци€</A></td><td align=left><A href="#т_ лючевые—войстваќрганизаци€"> лючевые—войстваќрганизаци€</A></td></tr>
+<tr >
+	<td align=left><A name="string (12)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»ЌЌ</A></td><td align=left><A href="#т_string (12)">string (12)</A></td></tr>
+<tr >
+	<td align=left><A name="string (9)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ѕѕ</A></td><td align=left><A href="#т_string (9)">string (9)</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименованиеѕолное</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование—окращенное</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name=" лючевые—войства–егистраци€¬Ќалоговомќргане">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;–егистраци€¬Ќалоговомќргане</A></td><td align=left><A href="#т_ лючевые—войства–егистраци€¬Ќалоговомќргане"> лючевые—войства–егистраци€¬Ќалоговомќргане</A></td></tr>
+<tr >
+	<td align=left><A name="string (9)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ѕѕ</A></td><td align=left><A href="#т_string (9)">string (9)</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименованиеќбособленногоѕодразделени€</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="string (11)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ќ ј“ќ</A></td><td align=left><A href="#т_string (11)">string (11)</A></td></tr>
+<tr >
+	<td align=left><A name="—правочник—сылка.–егистрации¬Ќалоговомќргане">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_—правочник—сылка.–егистрации¬Ќалоговомќргане">—правочник—сылка.–егистрации¬Ќалоговомќргане</A></td></tr>
+<tr >
+	<td align=left><A name="int (5)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;÷ифровой»ндексќбособленногоѕодразделени€</A></td><td align=left><A href="#т_int (5)">int (5)</A></td></tr>
+<tr >
+	<td align=left><A name="—правочник—сылка.ќрганизации">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_—правочник—сылка.ќрганизации">—правочник—сылка.ќрганизации</A></td></tr>
+<tr >
+	<td align=left><A name="ёридическое‘изическоеЋицо">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ёридическое‘изическоеЋицо</A></td><td align=left><A href="#т_ёридическое‘изическоеЋицо">ёридическое‘изическоеЋицо</A></td></tr>
+<tr >
+	<td align=left><A name="ƒокумент—сылка.ЅЌ‘ќЅухгалтерска€ќпераци€">&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_ƒокумент—сылка.ЅЌ‘ќЅухгалтерска€ќпераци€">ƒокумент—сылка.ЅЌ‘ќЅухгалтерска€ќпераци€</A></td></tr>
+<tr >
+	<td align=left BGCOLOR=gainsboro><A name="т_ лючевые—войстваЅЌ‘ќ¬иды—убконтоЅанковские"> лючевые—войстваЅЌ‘ќ¬иды—убконтоЅанковские</A></td><td align=left BGCOLOR=gainsboro>&nbsp;</td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»дентификатор</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left BGCOLOR=gainsboro><A name="т_ лючевые—войстваЅЌ‘ќ—четајналитического”чета"> лючевые—войстваЅЌ‘ќ—четајналитического”чета</A></td><td align=left BGCOLOR=gainsboro>&nbsp;</td></tr>
+<tr >
+	<td align=left><A name=" лючевые—войства¬алюта">&nbsp;&nbsp;&nbsp;&nbsp;¬алюта</A></td><td align=left><A href="#т_ лючевые—войства¬алюта"> лючевые—войства¬алюта</A></td></tr>
+<tr >
+	<td align=left><A name="string (3)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; од</A></td><td align=left><A href="#т_string (3)">string (3)</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="—правочник—сылка.¬алюты">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_—правочник—сылка.¬алюты">—правочник—сылка.¬алюты</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp; од</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name=" лючевые—войстваќрганизаци€">&nbsp;&nbsp;&nbsp;&nbsp;ќрганизаци€</A></td><td align=left><A href="#т_ лючевые—войстваќрганизаци€"> лючевые—войстваќрганизаци€</A></td></tr>
+<tr >
+	<td align=left><A name=" лючевые—войстваќрганизаци€">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;√оловна€ќрганизаци€</A></td><td align=left><A href="#т_ лючевые—войстваќрганизаци€"> лючевые—войстваќрганизаци€</A></td></tr>
+<tr >
+	<td align=left><A name="string (12)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»ЌЌ</A></td><td align=left><A href="#т_string (12)">string (12)</A></td></tr>
+<tr >
+	<td align=left><A name="string (9)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ѕѕ</A></td><td align=left><A href="#т_string (9)">string (9)</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименованиеѕолное</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование—окращенное</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name=" лючевые—войства–егистраци€¬Ќалоговомќргане">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;–егистраци€¬Ќалоговомќргане</A></td><td align=left><A href="#т_ лючевые—войства–егистраци€¬Ќалоговомќргане"> лючевые—войства–егистраци€¬Ќалоговомќргане</A></td></tr>
+<tr >
+	<td align=left><A name="string (9)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ѕѕ</A></td><td align=left><A href="#т_string (9)">string (9)</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименованиеќбособленногоѕодразделени€</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="string (11)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ќ ј“ќ</A></td><td align=left><A href="#т_string (11)">string (11)</A></td></tr>
+<tr >
+	<td align=left><A name="—правочник—сылка.–егистрации¬Ќалоговомќргане">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_—правочник—сылка.–егистрации¬Ќалоговомќргане">—правочник—сылка.–егистрации¬Ќалоговомќргане</A></td></tr>
+<tr >
+	<td align=left><A name="int (5)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;÷ифровой»ндексќбособленногоѕодразделени€</A></td><td align=left><A href="#т_int (5)">int (5)</A></td></tr>
+<tr >
+	<td align=left><A name="—правочник—сылка.ќрганизации">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_—правочник—сылка.ќрганизации">—правочник—сылка.ќрганизации</A></td></tr>
+<tr >
+	<td align=left><A name="ёридическое‘изическоеЋицо">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ёридическое‘изическоеЋицо</A></td><td align=left><A href="#т_ёридическое‘изическоеЋицо">ёридическое‘изическоеЋицо</A></td></tr>
+<tr >
+	<td align=left><A name="—правочник—сылка.ЅЌ‘ќ—четајналитического”чета">&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_—правочник—сылка.ЅЌ‘ќ—четајналитического”чета">—правочник—сылка.ЅЌ‘ќ—четајналитического”чета</A></td></tr>
+<tr >
+	<td align=left BGCOLOR=gainsboro><A name="т_ лючевые—войства¬алюта"> лючевые—войства¬алюта</A></td><td align=left BGCOLOR=gainsboro>&nbsp;</td></tr>
+<tr >
+	<td align=left><A name="string (3)">&nbsp;&nbsp;&nbsp;&nbsp; од</A></td><td align=left><A href="#т_string (3)">string (3)</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="—правочник—сылка.¬алюты">&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_—правочник—сылка.¬алюты">—правочник—сылка.¬алюты</A></td></tr>
+<tr >
+	<td align=left BGCOLOR=gainsboro><A name="т_ лючевые—войства√руппаЌастроек‘инансового”чета–асчетов"> лючевые—войства√руппаЌастроек‘инансового”чета–асчетов</A></td><td align=left BGCOLOR=gainsboro>&nbsp;</td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="—правочник—сылка.√руппыЌастроек‘инансового”чета–асчетов">&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_—правочник—сылка.√руппыЌастроек‘инансового”чета–асчетов">—правочник—сылка.√руппыЌастроек‘инансового”чета–асчетов</A></td></tr>
+<tr >
+	<td align=left BGCOLOR=gainsboro><A name="т_ лючевые—войстваƒоговор"> лючевые—войстваƒоговор</A></td><td align=left BGCOLOR=gainsboro>&nbsp;</td></tr>
+<tr >
+	<td align=left><A name=" лючевые—войства¬алюта">&nbsp;&nbsp;&nbsp;&nbsp;¬алюта¬заиморасчетов</A></td><td align=left><A href="#т_ лючевые—войства¬алюта"> лючевые—войства¬алюта</A></td></tr>
+<tr >
+	<td align=left><A name="string (3)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; од</A></td><td align=left><A href="#т_string (3)">string (3)</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="—правочник—сылка.¬алюты">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_—правочник—сылка.¬алюты">—правочник—сылка.¬алюты</A></td></tr>
+<tr >
+	<td align=left><A name="¬идыƒоговоров">&nbsp;&nbsp;&nbsp;&nbsp;¬идƒоговора</A></td><td align=left><A href="#т_¬идыƒоговоров">¬идыƒоговоров</A></td></tr>
+<tr >
+	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_date">date</A></td></tr>
+<tr >
+	<td align=left><A name=" лючевые—войства онтрагент">&nbsp;&nbsp;&nbsp;&nbsp; онтрагент</A></td><td align=left><A href="#т_ лючевые—войства онтрагент"> лючевые—войства онтрагент</A></td></tr>
+<tr >
+	<td align=left><A name="string (12)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»ЌЌ</A></td><td align=left><A href="#т_string (12)">string (12)</A></td></tr>
+<tr >
+	<td align=left><A name="string (9)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ѕѕ</A></td><td align=left><A href="#т_string (9)">string (9)</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименованиеѕолное</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="—правочник—сылка. онтрагенты">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_—правочник—сылка. онтрагенты">—правочник—сылка. онтрагенты</A></td></tr>
+<tr >
+	<td align=left><A name="ёридическое‘изическоеЋицо">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ёридическое‘изическоеЋицо</A></td><td align=left><A href="#т_ёридическое‘изическоеЋицо">ёридическое‘изическоеЋицо</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;Ќомер</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name=" лючевые—войстваќрганизаци€">&nbsp;&nbsp;&nbsp;&nbsp;ќрганизаци€</A></td><td align=left><A href="#т_ лючевые—войстваќрганизаци€"> лючевые—войстваќрганизаци€</A></td></tr>
+<tr >
+	<td align=left><A name=" лючевые—войстваќрганизаци€">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;√оловна€ќрганизаци€</A></td><td align=left><A href="#т_ лючевые—войстваќрганизаци€"> лючевые—войстваќрганизаци€</A></td></tr>
+<tr >
+	<td align=left><A name="string (12)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»ЌЌ</A></td><td align=left><A href="#т_string (12)">string (12)</A></td></tr>
+<tr >
+	<td align=left><A name="string (9)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ѕѕ</A></td><td align=left><A href="#т_string (9)">string (9)</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименованиеѕолное</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование—окращенное</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name=" лючевые—войства–егистраци€¬Ќалоговомќргане">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;–егистраци€¬Ќалоговомќргане</A></td><td align=left><A href="#т_ лючевые—войства–егистраци€¬Ќалоговомќргане"> лючевые—войства–егистраци€¬Ќалоговомќргане</A></td></tr>
+<tr >
+	<td align=left><A name="string (9)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ѕѕ</A></td><td align=left><A href="#т_string (9)">string (9)</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ќаименованиеќбособленногоѕодразделени€</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="string (11)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ќ ј“ќ</A></td><td align=left><A href="#т_string (11)">string (11)</A></td></tr>
+<tr >
+	<td align=left><A name="—правочник—сылка.–егистрации¬Ќалоговомќргане">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_—правочник—сылка.–егистрации¬Ќалоговомќргане">—правочник—сылка.–егистрации¬Ќалоговомќргане</A></td></tr>
+<tr >
+	<td align=left><A name="int (5)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;÷ифровой»ндексќбособленногоѕодразделени€</A></td><td align=left><A href="#т_int (5)">int (5)</A></td></tr>
+<tr >
+	<td align=left><A name="—правочник—сылка.ќрганизации">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_—правочник—сылка.ќрганизации">—правочник—сылка.ќрганизации</A></td></tr>
+<tr >
+	<td align=left><A name="ёридическое‘изическоеЋицо">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ёридическое‘изическоеЋицо</A></td><td align=left><A href="#т_ёридическое‘изическоеЋицо">ёридическое‘изическоеЋицо</A></td></tr>
+<tr >
+	<td align=left><A name="boolean">&nbsp;&nbsp;&nbsp;&nbsp;–асчеты¬”словных≈диницах</A></td><td align=left><A href="#т_boolean">boolean</A></td></tr>
+<tr >
+	<td align=left><A name="—правочник—сылка.ƒоговоры">&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_—правочник—сылка.ƒоговоры">—правочник—сылка.ƒоговоры</A></td></tr>
+<tr >
+	<td align=left BGCOLOR=gainsboro><A name="т_ лючевые—войства онтрагент"> лючевые—войства онтрагент</A></td><td align=left BGCOLOR=gainsboro>&nbsp;</td></tr>
+<tr >
+	<td align=left><A name="string (12)">&nbsp;&nbsp;&nbsp;&nbsp;»ЌЌ</A></td><td align=left><A href="#т_string (12)">string (12)</A></td></tr>
+<tr >
+	<td align=left><A name="string (9)">&nbsp;&nbsp;&nbsp;&nbsp; ѕѕ</A></td><td align=left><A href="#т_string (9)">string (9)</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;Ќаименованиеѕолное</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="—правочник—сылка. онтрагенты">&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_—правочник—сылка. онтрагенты">—правочник—сылка. онтрагенты</A></td></tr>
+<tr >
+	<td align=left><A name="ёридическое‘изическоеЋицо">&nbsp;&nbsp;&nbsp;&nbsp;ёридическое‘изическоеЋицо</A></td><td align=left><A href="#т_ёридическое‘изическоеЋицо">ёридическое‘изическоеЋицо</A></td></tr>
+<tr >
+	<td align=left BGCOLOR=gainsboro><A name="т_ лючевые—войства онтрагент√руппа"> лючевые—войства онтрагент√руппа</A></td><td align=left BGCOLOR=gainsboro>&nbsp;</td></tr>
+<tr >
+	<td align=left><A name=" лючевые—войства онтрагент√руппа">&nbsp;&nbsp;&nbsp;&nbsp;√руппа</A></td><td align=left><A href="#т_ лючевые—войства онтрагент√руппа"> лючевые—войства онтрагент√руппа</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="—правочник—сылка. онтрагенты√руппа">&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_—правочник—сылка. онтрагенты√руппа">—правочник—сылка. онтрагенты√руппа</A></td></tr>
+<tr >
 	<td align=left BGCOLOR=gainsboro><A name="т_ лючевые—войстваЌѕ‘ЅЅанковские“ранзакции"> лючевые—войстваЌѕ‘ЅЅанковские“ранзакции</A></td><td align=left BGCOLOR=gainsboro>&nbsp;</td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp; од“ранзакции</A></td><td align=left><A href="#т_string">string</A></td></tr>
@@ -6273,7 +7091,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -6317,7 +7135,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -6361,7 +7179,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -6405,7 +7223,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -6449,7 +7267,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -6493,7 +7311,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -6537,7 +7355,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -6581,7 +7399,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -6625,7 +7443,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -6669,7 +7487,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -6713,7 +7531,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -6757,7 +7575,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -6801,7 +7619,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -6845,7 +7663,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -6889,7 +7707,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -6933,7 +7751,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -6977,7 +7795,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -7021,7 +7839,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
 	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормы</A></td><td align=left><A href="#т_date">date</A></td></tr>
 <tr >
@@ -7067,7 +7885,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -7111,7 +7929,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -7155,7 +7973,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -7199,7 +8017,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -7243,7 +8061,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -7287,7 +8105,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -7331,7 +8149,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -7375,7 +8193,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -7419,7 +8237,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -7463,7 +8281,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -7507,7 +8325,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -7551,7 +8369,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -7595,7 +8413,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -7639,7 +8457,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -7683,7 +8501,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -7727,7 +8545,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -7771,7 +8589,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -7815,7 +8633,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -7859,7 +8677,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -7903,7 +8721,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -7947,7 +8765,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -7991,7 +8809,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -8035,7 +8853,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -8079,7 +8897,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -8123,7 +8941,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -8167,7 +8985,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -8211,7 +9029,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -8255,7 +9073,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -8299,7 +9117,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -8343,7 +9161,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -8387,7 +9205,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -8431,7 +9249,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -8475,7 +9293,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -8519,7 +9337,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -8563,7 +9381,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -8607,7 +9425,9 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
+<tr >
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормы</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -8651,7 +9471,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -8695,7 +9515,7 @@ Y<br>
 <tr >
 	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
-	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+	<td align=left><A name="dateTime">&nbsp;&nbsp;&nbsp;&nbsp;ƒата‘ормировани€</A></td><td align=left><A href="#т_dateTime">dateTime</A></td></tr>
 <tr >
 	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;»м€‘айла</A></td><td align=left><A href="#т_string">string</A></td></tr>
 <tr >
@@ -8761,6 +9581,24 @@ Y<br>
 <tr >
 	<td align=left><A name="ёридическое‘изическоеЋицо">&nbsp;&nbsp;&nbsp;&nbsp;ёридическое‘изическоеЋицо</A></td><td align=left><A href="#т_ёридическое‘изическоеЋицо">ёридическое‘изическоеЋицо</A></td></tr>
 <tr >
+	<td align=left BGCOLOR=gainsboro><A name="т_ лючевые—войстваѕользователь"> лючевые—войстваѕользователь</A></td><td align=left BGCOLOR=gainsboro>&nbsp;</td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="—правочник—сылка.ѕользователи">&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_—правочник—сылка.ѕользователи">—правочник—сылка.ѕользователи</A></td></tr>
+<tr >
+	<td align=left><A name=" лючевые—войства‘изическоеЋицо">&nbsp;&nbsp;&nbsp;&nbsp;‘изическоеЋицо</A></td><td align=left><A href="#т_ лючевые—войства‘изическоеЋицо"> лючевые—войства‘изическоеЋицо</A></td></tr>
+<tr >
+	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ƒата–ождени€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+<tr >
+	<td align=left><A name="string (12)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»ЌЌ</A></td><td align=left><A href="#т_string (12)">string (12)</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; од¬ѕрограмме</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="—правочник—сылка.‘изическиеЋица">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_—правочник—сылка.‘изическиеЋица">—правочник—сылка.‘изическиеЋица</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;‘»ќ</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
 	<td align=left BGCOLOR=gainsboro><A name="т_ лючевые—войства–егистраци€¬Ќалоговомќргане"> лючевые—войства–егистраци€¬Ќалоговомќргане</A></td><td align=left BGCOLOR=gainsboro>&nbsp;</td></tr>
 <tr >
 	<td align=left><A name="string (9)">&nbsp;&nbsp;&nbsp;&nbsp; ѕѕ</A></td><td align=left><A href="#т_string (9)">string (9)</A></td></tr>
@@ -8772,6 +9610,26 @@ Y<br>
 	<td align=left><A name="—правочник—сылка.–егистрации¬Ќалоговомќргане">&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_—правочник—сылка.–егистрации¬Ќалоговомќргане">—правочник—сылка.–егистрации¬Ќалоговомќргане</A></td></tr>
 <tr >
 	<td align=left><A name="int (5)">&nbsp;&nbsp;&nbsp;&nbsp;÷ифровой»ндексќбособленногоѕодразделени€</A></td><td align=left><A href="#т_int (5)">int (5)</A></td></tr>
+<tr >
+	<td align=left BGCOLOR=gainsboro><A name="т_ лючевые—войства—транаћира"> лючевые—войства—транаћира</A></td><td align=left BGCOLOR=gainsboro>&nbsp;</td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp; од</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;Ќаименование</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="—правочник—сылка.—траныћира">&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_—правочник—сылка.—траныћира">—правочник—сылка.—траныћира</A></td></tr>
+<tr >
+	<td align=left BGCOLOR=gainsboro><A name="т_ лючевые—войства‘изическоеЋицо"> лючевые—войства‘изическоеЋицо</A></td><td align=left BGCOLOR=gainsboro>&nbsp;</td></tr>
+<tr >
+	<td align=left><A name="date">&nbsp;&nbsp;&nbsp;&nbsp;ƒата–ождени€</A></td><td align=left><A href="#т_date">date</A></td></tr>
+<tr >
+	<td align=left><A name="string (12)">&nbsp;&nbsp;&nbsp;&nbsp;»ЌЌ</A></td><td align=left><A href="#т_string (12)">string (12)</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp; од¬ѕрограмме</A></td><td align=left><A href="#т_string">string</A></td></tr>
+<tr >
+	<td align=left><A name="—правочник—сылка.‘изическиеЋица">&nbsp;&nbsp;&nbsp;&nbsp;—сылка</A></td><td align=left><A href="#т_—правочник—сылка.‘изическиеЋица">—правочник—сылка.‘изическиеЋица</A></td></tr>
+<tr >
+	<td align=left><A name="string">&nbsp;&nbsp;&nbsp;&nbsp;‘»ќ</A></td><td align=left><A href="#т_string">string</A></td></tr>
 </table><BR>
 </P></BODY></HTML>
 
